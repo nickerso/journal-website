@@ -1,0 +1,14 @@
+Title: About the Journal
+Slug: about
+       
+About the Journal
+-----------------
+*Physiome* papers describe the details of mathematical models and computational simulations associated with a ‘primary’ experimental/modelling paper that has recently been accepted to a peer-reviewed physiology, bioengineering or biophysics journal. Submissions to *Physiome* are evaluated to determine their **reproducibility**, **reusability**, and **discoverability**. At a minimum, accepted submissions are guaranteed to be in an executable state that reproduces the modelling predictions in the primary paper, and are archived for permanent access by the community. *Physiome* will also publish new papers based on older primary modelling papers where there is substantial value to the physiological modelling community in making a reusable, reproducible, and discoverable version of the model available. *Physiome* papers are citable with a DOI and published as open access with an author processing charge of US$300.
+
+The purpose of *Physiome* is to encourage the reproducibility and reuse of models by providing citation credit for papers that describe and document curated and annotated models. The journal will assist authors in making suitable submissions available in the *Physiome* encoding standards (CellML, FieldML, SBML, NeuroML for encoding the model; SED-ML for encoding the simulation procols, parameters and outputs).
+
+Note that a submission will only be accepted for *Physiome* if the primary paper that describes the experiments, data and model(s) has been accepted by a reputable peer-reviewed journal (referred to here as the ‘primary journal’). The exception to this will be solicited review papers that document a range of published models in a given area. For some primary journals the submission of the companion modelling paper to *Physiome* may proceed in parallel so that the curated, annotated and documented model is available at the time of publication of the primary paper. Authors are therefore encouraged to prepare their *Physiome* submission(s) in parallel to the primary paper. Submissions will not be curated and evaluated until the primary paper is accepted, but authors will be able to access and share their submission via the *Physiome Model Repository*.
+
+*Physiome* will not peer review the submitted paper but does provide submission templates to ensure consistent documentation of the model and will work with authors to ensure that the published models reproduce the figures of the primary paper.
+
+*Physiome* articles will be available on the *Physiome* Figshare portal (..), where the *Physiome* paper and the zipped collection of models and data are available with DOIs. “Live” models and simulation descriptions will also be available in the *[Physiome Model Repository](https://models.physiomeproject.org)*. Wherever possible, models encoded in the standard formats are available to run from directly from this website.
