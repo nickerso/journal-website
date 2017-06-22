@@ -1,21 +1,29 @@
 {% extends 'base.html' %}
 {% block title %}The Physiome Journal{% endblock %}
 {% block body %}
-<p><a href="#">Physiome standards</a></p>
+  <p><a href="#">Physiome standards</a></p>
 <p><a href="#">Software tools</a></p>
 <div class="callout">
   <h3>Latest articles</h3>
   <ul>
     {% for article in articles_page.object_list %}
-    <li><a href="{{SITEURL}}/{{article.url}}">{{ article.title}}</a> by {% for author in article.pubauthor %}
-      {{author}},
-      {% endfor %}
-      {% for doc in article.documents %}
-      {% if loop.index is odd %}
-      <a href="{{article.documents[loop.index0+1]}}">{{doc}}</a>
-      {% else %}
-      {% endif %}
-      {% endfor %}</li>
+      <li>
+	<p style="margin-bottom:0px"><a href="{{SITEURL}}/{{article.url}}">{{ article.title}}</a></p>
+	<p>
+	  {% for author in article.pubauthor %} 
+	    {{author}}
+	    {% if not loop.last %}
+	      ,
+	    {% endif %}
+	  {% endfor %}
+	  {% for doc in article.documents %}
+	    {% if loop.index is odd %}
+	      <a href="{{article.documents[loop.index0+1]}}">{{doc}}</a>
+	    {% else %}
+	    {% endif %}
+	  {% endfor %}
+	</p>
+      </li>
     {% endfor %}
   </ul>
 </div>
