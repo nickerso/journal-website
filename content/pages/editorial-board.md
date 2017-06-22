@@ -5,7 +5,7 @@ Slug: editorial-board
 ### *Physiome* Management Board
 Professor Denis Noble, IUPS President; Professor Emeritus, Oxford University
 
-Professor Walter Boron, IUPS Secretary General; Chair, Department of Physiology and Biophysics, Washington University, St. Louis
+Professor Walter Boron, IUPS Secretary General; Chair, Department of Physiology and Biophysics, Case Western Reserve University, Cleveland, USA
 
 Professor Andrew McCulloch, Chair IUPS Physiome Committee; Bioengineering Department, University of California San Diego
 

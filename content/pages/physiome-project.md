@@ -3,7 +3,7 @@ Slug: physiome-project
 
 The Physiome Project
 --------------------
-The International Union of Physiological Sciences (IUPS) launched the Physiome Project at the IUPS World Congress in St Petersburg in 1997. The major focus of the project has been the creation of standards, tools and databases for reproducible and reusable mathematical models of physiological processes ([www.physiomeproject.org](http://www.physiomeproject.org)). Note that:
+The International Union of Physiological Sciences (IUPS) launched the Physiome Project at the IUPS World Congress in St Petersburg in 1997 in order to bring quantitative bioengineering approaches to the study of anatomy and physiology. In particular this approach advocates the use of anatomically and biophysically based mathematical models that deal with physiological processes operating over multiple spatial and temporal scales. The major focus of the project has been the creation of standards, tools and databases for reproducible and reusable mathematical models of physiological processes ([www.physiomeproject.org](http://www.physiomeproject.org)). Note that:
 
 * A model simulation is **repeatable** when re-running it produces a consistent result. 
 
