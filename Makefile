@@ -1,5 +1,6 @@
 PY?=python
 PELICAN?=pelican
+PIP=pip
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
@@ -55,6 +56,9 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 	@echo '                                                                          '
+
+deps:
+	$(PIP) install -r py-requirements.txt
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
