@@ -1,8 +1,11 @@
-Title: Modeling Biological Modularity with CellML
-Date: 2008-01-01
-PubAuthor: Cooling, M. T.
-	Hunter, P. J.
-	Crampin, E. J.
+Title: Multiple Modes of Calcium-induced Calcium Release in Sympathetic Neurons I: Attenuation of Endoplasmic Reticulum Ca2+ Accumulation at Low [Ca2+]i during Weak Depolarisation
+Date: 2001-01-01
+PubAuthor: Albrecht
+	Colegrove
+	Hongpaisan
+	Pivovarova
+	Andrews
+	Friel
 Documents: SedML
 	https://models.physiomeproject.org/workspace/cooling_hunter_crampin_CellML_2008/@@rawfile/fef0cf2d88bae010f529b55a8b981fd15d8b6c69/IP3Submodel_Main.cellML
 	CellML

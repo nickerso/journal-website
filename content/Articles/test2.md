@@ -1,8 +1,7 @@
-Title: Modeling Biological Modularity with CellML
-Date: 2008-01-01
-PubAuthor: Cooling, M. T.
-	Hunter, P. J.
-	Crampin, E. J.
+Title: Cortassa et al. (2006) ECME model
+Date: 2006-01-01
+PubAuthor: Nickerson, D. P.
+	Cortassa
 Documents: SedML
 	https://models.physiomeproject.org/workspace/cooling_hunter_crampin_CellML_2008/@@rawfile/fef0cf2d88bae010f529b55a8b981fd15d8b6c69/IP3Submodel_Main.cellML
 	CellML
