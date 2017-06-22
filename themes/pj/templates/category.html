@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
+{% import 'shared/pub.html' as pub %}
 {% block title %} {{page.title}} {% endblock %}
 {% block body %}
+<h2>All articles</h2>
   <ul>
-  {% for article in articles_page.object_list %}
-    <li><a href="{{SITEURL}}/{{article.url}}">{{ article.title}}</a></li>
+    {% for article in articles_page.object_list %}
+    {{ pub.publisting(article) }}
   {% endfor %}
   </ul>
 {% endblock %}

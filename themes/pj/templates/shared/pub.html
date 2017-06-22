@@ -1,0 +1,19 @@
+{% macro publisting(pub_article) %}
+      <li>
+	<p style="margin-bottom:0px"><a href="{{SITEURL}}/{{pub_article.url}}">{{pub_article.title}}</a></p>
+	<p>
+	  {% for author in pub_article.pubauthor %} 
+	    {{author}}
+	    {% if not loop.last %}
+	      ,
+	    {% endif %}
+	  {% endfor %}
+	  {% for doc in pub_article.documents %}
+	    {% if loop.index is odd %}
+	      <a href="{{pub_article.documents[loop.index0+1]}}">{{doc}}</a>
+	    {% else %}
+	    {% endif %}
+	  {% endfor %}
+	</p>
+      </li>
+{% endmacro %}
