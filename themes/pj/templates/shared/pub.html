@@ -3,12 +3,7 @@
   <td class="medium-9 columns">
     <p style="margin-bottom:0px"><a href="{{SITEURL}}/{{pub_article.url}}">{{pub_article.title}}</a></p>
     <p>
-      {% for author in pub_article.pubauthor %} 
-      {{author}}
-      {% if not loop.last %}
-      ,
-      {% endif %}
-      {% endfor %}
+      {{authorlist(pub_article)}}
     </p>
   </td>
   <td class="medium-3 columns" style="text-align:center">
@@ -34,4 +29,18 @@
     Please note that this option requires <a href="http://opencor.ws">OpenCOR</a> to be installed onto your computer and opened at least once.
   </div>
 
+{% endmacro %}
+
+{% macro authorlist(pub) %}
+  {% if pub.pubauthor %}
+    {{pub.pubauthor}}
+  {% elif pub.pubauthors %}
+    {% for author in pub.pubauthors %} 
+      {{author}}
+      {% if not loop.last %}
+	,
+      {% endif %}
+    {% endfor %}
+  {% else %}
+  {% endif %}
 {% endmacro %}

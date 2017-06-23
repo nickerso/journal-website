@@ -1,6 +1,6 @@
 Title: Differential Regulation of ER Ca2+ Uptake and Release Rates Accounts for Multiple Modes of Ca2+-induced Ca2+ Release
 Date: 2002-01-01
-PubAuthor: Albrecht
+PubAuthors: Albrecht
 	Colegrove
 	Friel
 Documents: SedML

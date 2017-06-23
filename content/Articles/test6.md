@@ -1,6 +1,6 @@
 Title: Comparison of Simulated and Measured Calcium Sparks in Intact Skeletal Muscle Fibers of the Frog (Reaction B)
 Date: 2002-01-01
-PubAuthor: Baylor
+PubAuthors: Baylor
 	Hollingworth
 	Chandler
 Documents: SedML

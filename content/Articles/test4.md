@@ -1,6 +1,6 @@
 Title: Multiple Modes of Calcium-induced Calcium Release in Sympathetic Neurons I: Attenuation of Endoplasmic Reticulum Ca2+ Accumulation at Low [Ca2+]i during Weak Depolarisation
 Date: 2001-01-01
-PubAuthor: Albrecht
+PubAuthors: Albrecht
 	Colegrove
 	Hongpaisan
 	Pivovarova
