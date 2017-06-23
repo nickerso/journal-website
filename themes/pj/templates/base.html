@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="{{SITEURL}}/theme/css/foundation.min.css">
+    <link rel="icon" href="{{SITEURL}}/images/favicon.png">
+    <link rel="stylesheet" href="{{SITEURL}}/theme/css/foundation-icons/foundation-icons.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
+  </head>
+  <body>
+    <!-- Top navigation bar -->
+    <a href="http://www.iups.org" style="display:block;color:black;font-weight:normal">
+      <div class="row">
+	<div class="small-12 columns"></div>
+      </div>
+    </a>
+    <div style="background-color:rgb(243, 235, 255);">
+      <div class="row">
+	<div class="small-8 column"><a href="{{SITEURL}}/"><h1 style="color:black;display:inline;font-family:'Roboto',sans-serif;padding-top:15px;padding-bottom:15px;letter-spacing:-3px"><em>Physiome</em></h1></a><span style="margin-left:10px"><a href="http://iups.org" style="color:black"><img src="{{SITEURL}}/theme/images/iups.svg" style="width:60px;vertical-align:bottom"><span style="vertical-align:30%">International Union of Physiological Sciences</span></a></span></div>
+	<div class="small-4 column" style="text-align:right">
+	  <img width="350px" src="{{SITEURL}}/theme/images/associated-branding.png">
+	</div>
+      </div>
+    </div>
+    <div style="background-color: #e6e6e6;">
+      <div class="row">
+	<div class="small-12 column">
+	  <div class="top-bar">
+	    <div class="top-bar-left">
+	      <ul class="menu">
+		<li><a href="{{SITEURL}}/physiome-project.html">The Physiome Project</a></li>
+		<li><a href="{{SITEURL}}/about.html">About the Journal</a></li>
+		<li><a href="{{SITEURL}}/instructions-to-authors.html">Instructions to Authors</a></li>
+		<li><a href="{{SITEURL}}/editorial-board.html">Editorial Board</a></li>
+	      </ul>
+	    </div>
+	    <div class="top-bar-right">
+	      <ul class="menu">
+		<li><input type="text" placeholder="Find articles..."></li>
+		<li><button type="button" class="button">Search</button></li>
+	      </ul>
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    <!-- Body -->
+    <div class="body" style="margin-top:20px">
+      <div class="row">
+
+	{% block body %}
+	{% endblock %}
+      </div>
+    </div>
+    <script type="text/javascript" src="{{SITEURL}}/theme/js/jquery.js"></script>
+    <script type="text/javascript" src="{{SITEURL}}/theme/js/what-input.js"></script>
+    <script type="text/javascript" src="{{SITEURL}}/theme/js/foundation.min.js"></script>
+		
+  </body>
+
+</html>

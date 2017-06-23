@@ -17,7 +17,7 @@ def fullpath(root,dirpath,fname):
 def template_pages_map(root):
 	result = {}
 	for (dirpath, dirnames, filenames) in walk(root):
-		dirpathise = partial(fullpath,root,dirpath)
+                dirpathise = partial(fullpath,root,dirpath)
 		fullnames = map(dirpathise,filenames)
 		for (name,fullname) in fullnames:
 			result[fullname] = name
@@ -58,8 +58,9 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 CATEGORY_SAVE_AS = '{slug}/index.html'
 CATEGORY_URL = '{slug}/index.html'
-
+ARTICLE_URL = '{category}/{slug}.html'
+ARTICLE_SAVE_AS = '{category}/{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
-PAGE_URL = 'slug.html'
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

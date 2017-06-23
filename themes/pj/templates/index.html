@@ -1,9 +1,12 @@
-{% extends "shared/common.html" %}
+{% extends 'base.html' %}
+{% import 'shared/pub.html' as pub %}
 {% block title %}The Physiome Journal{% endblock %}
 {% block body %}
-<p><a href="#">Physiome standards</a></p>
+  <p><a href="#">Physiome standards</a></p>
 <p><a href="#">Software tools</a></p>
-<h2>Articles and Models+Data</h2>
-<iframe src="https://widgets.figsh.com/articles/5761031/embed?show_title=1" width="568" height="351" frameborder="0"></iframe>
-<iframe src="https://widgets.figshare.com/articles/4888394/embed?show_title=1" width="568" height="351" frameborder="0"></iframe>
+<div class="callout">
+  <h3>Latest articles</h3>
+  {{ pub.pubtable(articles_page.object_list[:9]) }}
+  <p><a href="{{SITEURL}}/articles">See all articles...</a></p>
+</div>
 {% endblock %}
