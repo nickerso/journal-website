@@ -3,9 +3,9 @@
 {% block title %} {{page.title}} {% endblock %}
 {% block body %}
 <h2>All articles</h2>
-  <ul>
+  <table>
     {% for article in articles_page.object_list %}
     {{ pub.publisting(article) }}
   {% endfor %}
-  </ul>
+  </table>
 {% endblock %}

@@ -6,11 +6,7 @@
 <p><a href="#">Software tools</a></p>
 <div class="callout">
   <h3>Latest articles</h3>
-  <ul>
-    {% for article in articles_page.object_list[:9] %}
-    {{ pub.publisting(article) }}
-    {% endfor %}
-  </ul>
+  {{ pub.pubtable(articles_page.object_list[:9]) }}
   <p><a href="{{SITEURL}}/articles">See all articles...</a></p>
 </div>
 {% endblock %}
