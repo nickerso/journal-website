@@ -10,4 +10,4 @@ Documents: SedML
 
 ### Freetext content
 
-Here is free text content written in Markdown.
+A summary of the article can be put here, along with interactive charts and full-text content.
