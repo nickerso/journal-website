@@ -8,12 +8,14 @@
 	      ,
 	    {% endif %}
 	  {% endfor %}
-	  {% for doc in pub_article.documents %}
-	    {% if loop.index is odd %}
-	      <a href="{{pub_article.documents[loop.index0+1]}}">{{doc}}</a>
-	    {% else %}
-	    {% endif %}
-	  {% endfor %}
+	  {% if pub_article.fulltexturl %}
+	  <span style="margin-right:6px" class="small"><small><a href="{{pub_article.fulltexturl}}">Fulltext</a></small></span>
+	  {% else %}
+	  {% endif %}
+	  {% if pub_article.runmodelurl %}
+	  <span><small><a href="{{pub_article.runmodelurl}}">Run in OpenCOR</a></small></span>
+	  {% else %}
+	  {% endif %}
 	</p>
       </li>
 {% endmacro %}
