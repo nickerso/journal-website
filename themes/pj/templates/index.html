@@ -2,11 +2,13 @@
 {% import 'shared/pub.html' as pub %}
 {% block title %}The Physiome Journal{% endblock %}
 {% block body %}
-  <p><a href="#">Physiome standards</a></p>
-<p><a href="#">Software tools</a></p>
 <div class="callout">
+  <h2>Welcome to <em>Physiome</em>.</h2>
+  <p>Physiome publishes reproducible and reusable mathematical models of physiological processes where the experimental details and model validation have been published or accepted for publication in a recognised 'primary' peer-reviewed journal. Physiome editors help with model curation and annotation to ensure that the modeling results claimed in the primary paper are consistent with the published model. Physiome is open access with a low APC (Author Processing Charge). Models can be run directly from the journal website with freely available open source software.</p>
+  <p>To run Physiome models on your laptop or desktop computer, download <a href="http://www.opencor.ws/">OpenCOR</a> and read <a href="http://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/">the tutorial online</a>.</p> 
+  
+</div>
   <h3>Latest articles</h3>
   {{ pub.pubtable(articles_page.object_list[:9]) }}
   <p><a href="{{SITEURL}}/articles">See all articles...</a></p>
-</div>
 {% endblock %}
