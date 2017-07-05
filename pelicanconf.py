@@ -25,7 +25,7 @@ def template_pages_map(root):
 
 
 AUTHOR = u'The Physiome Project'
-SITENAME = u'The PHYSIOME Journal'
+SITENAME = u'The Physiome Journal'
 SITEURL = ''
 
 PATH = 'content'
