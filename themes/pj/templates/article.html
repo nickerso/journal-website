@@ -6,7 +6,15 @@
     <p>
       {{pub.authorlist(article)}}
     </p>
-<p>Fulltext available: <a href="{{article.fulltexturl}}"><i class="fi-page" style="margin-right:5px"> </i>PDF</a> Run in OpenCOR: <a href="{{article.runmodelurl}}"><i class="fi-link"></i> CellML</a></p>
+<p>Fulltext available: 
+{% if article.fulltexturl %}
+<a href="{{article.fulltexturl}}"><i class="fi-page" style="margin-right:5px"> </i>PDF</a>
+{% else %}
+{% endif %}
+{% if article.runmodelurl %}
+ Run in OpenCOR: <a href="{{article.runmodelurl}}"><i class="fi-link"></i> CellML</a></p>
+{% else %}
+{% endif %}
     <p>Extra documents:
       {% for doc in article.documents %}
 	{% if loop.index is odd %}
