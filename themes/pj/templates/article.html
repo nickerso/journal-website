@@ -2,19 +2,26 @@
 {% import 'shared/pub.html' as pub %}
 {% block title %} {{page.title}} {% endblock %}
 {% block body %}
-    <h2>{{article.title}}</h2>
-    <p>
-      {{pub.authorlist(article)}}
-    </p>
+  <h2>{{article.title}}</h2>
+<p>
+  {{pub.authorlist(article)}}
+</p>
+<hr>
+{% if article.primarypaperurl %}
+  <p><em>This <em>Physiome</em> paper describes data and models from the primary paper <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></em>.</p>
+{% endif %}
 <p>Fulltext available: 
-{% if article.fulltexturl %}
-<a href="{{article.fulltexturl}}"><i class="fi-page" style="margin-right:5px"> </i>PDF</a>
-{% else %}
-{% endif %}
-{% if article.runmodelurl %}
- Run in OpenCOR: <a href="{{article.runmodelurl}}"><i class="fi-link"></i> CellML</a></p>
-{% else %}
-{% endif %}
+  {% if article.fulltexturl %}
+    <a href="{{article.fulltexturl}}"><i class="fi-page" style="margin-right:5px"> </i>PDF</a>
+  {% else %}
+  {% endif %}
+  {% if article.runmodelurl %}
+    Run in OpenCOR: <a href="{{article.runmodelurl}}" rel="noopener" target="_blank"><i class="fi-link"></i> CellML</a></p>
+  {% else %}
+  {% endif %}
+  {% if article.primarypaper %}
+  {% endif %}
+  {% if article.documents %}
     <p>Extra documents:
       {% for doc in article.documents %}
 	{% if loop.index is odd %}
@@ -22,5 +29,9 @@
 	{% else %}
 	{% endif %}
       {% endfor %}
-    {{article.content}}
+    </p>
+  {% else %}
+  {% endif %}
+  {{article.content}}
+  
 {% endblock %}

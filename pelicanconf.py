@@ -28,6 +28,8 @@ AUTHOR = u'The Physiome Project'
 SITENAME = u'The PHYSIOME Journal'
 SITEURL = ''
 
+STATIC_PATHS = ['pdfs']
+
 PATH = 'content'
 
 TIMEZONE = 'GMT'
