@@ -4,6 +4,8 @@ Date: 2008-01-01
 PubAuthor: Noble, D.
 FulltextURL:http://circres.ahajournals.org/content/69/5/1171.full.pdf?download=true
 RunModelURL:opencor://openFile/https://models.cellml.org/workspace/noble_1962/rawfile/c70f8962407db00673f1fdcac9f35a2593781c17/noble_1962.sedml
+MathsURL: https://models.cellml.org/e/2a6/noble_1962.cellml/cellml_math
+CodeURL: https://models.cellml.org/e/2a6/noble_1962.cellml/cellml_codegen
 Documents: SedML
 	https://models.physiomeproject.org/workspace/cooling_hunter_crampin_CellML_2008/@@rawfile/fef0cf2d88bae010f529b55a8b981fd15d8b6c69/IP3Submodel_Main.cellML
 	CellML
