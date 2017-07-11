@@ -9,14 +9,13 @@
 <hr>
 {% if article.primarypaperurl %}
   <p><em>This <em>Physiome</em> paper describes data and models from the primary paper <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></em>.</p>
-{% endif %}
+  {% endif %}
+  <p>{% if article.runmodelurl %}
+  <a class="button alert small" href="{{article.runmodelurl}}" rel="noopener" target="_blank">Launch with OpenCOR</a></p>
+  {% endif %}</p>
 <p>Fulltext available: 
   {% if article.fulltexturl %}
     <a href="{{article.fulltexturl}}"><i class="fi-page" style="margin-right:5px"> </i>PDF</a>
-  {% else %}
-  {% endif %}
-  {% if article.runmodelurl %}
-    Run in OpenCOR: <a href="{{article.runmodelurl}}" rel="noopener" target="_blank"><i class="fi-link"></i> CellML</a></p>
   {% else %}
   {% endif %}
   {% if article.primarypaper %}
