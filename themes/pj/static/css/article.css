@@ -1,0 +1,26 @@
+.action-button {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0.2rem;
+	padding: 0.85em 1em;
+	-webkit-appearance: none;
+	border: 1px solid transparent;
+	border-radius: 0;
+	transition: background-color 0.25s ease-out, color 0.25s ease-out;
+	font-size: 0.9rem;
+	line-height: 1;
+	text-align: center;
+	cursor: pointer;
+	background-color: #1779ba;
+	color: #fefefe;
+}
+
+.cellml-action-button {
+	background-color: #cc4b37;
+    color: #fefefe;
+}
+
+.cellml-action-button:hover, .cellml-action-button:focus {
+	background-color: #a53b2a;
+	color: #fefefe;
+}

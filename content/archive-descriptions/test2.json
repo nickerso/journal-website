@@ -6,6 +6,7 @@
 			"id": "id_001",
 			"location": "experiments/cell-model.xml",
 			"description": "This is the top-level model which is used in simulation experiments of the whole cell model.",
+			"highlight": true,
 			"cellml": {
 					"mathsURL": "https://models.physiomeproject.org/e/49f/experiments/cell-model.xml/cellml_math",
 					"codeURL": "https://models.physiomeproject.org/e/49f/experiments/cell-model.xml/cellml_codegen",
