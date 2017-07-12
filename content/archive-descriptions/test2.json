@@ -1,0 +1,59 @@
+{
+	"doi": "10.5072/FK2.stagefigshare.c.27322141.v1",
+	"id": "ArchiveRoot",
+	"children": [
+		{
+			"id": "id_001",
+			"location": "experiments/cell-model.xml",
+			"description": "This is the top-level model which is used in simulation experiments of the whole cell model.",
+			"cellml": {
+					"mathsURL": "https://models.physiomeproject.org/e/49f/experiments/cell-model.xml/cellml_math",
+					"codeURL": "https://models.physiomeproject.org/e/49f/experiments/cell-model.xml/cellml_codegen",
+					"simulateInOpenCOR": "opencor://openFile/https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.sedml"
+			}
+		},
+		{
+			"id": "id_002",
+			"location": "experiments/cell-model.sedml",
+			"description": "A simulation experiment for the whole cell model simulations.",
+			"sedml": {
+				"plots": [
+					{
+						"id": "plot01"
+					},
+					{
+						"id": "plot02"
+					}
+				]
+			}
+		},
+		{
+			"id": "id_003",
+			"location": "potassium_channel_model.xml",
+			"description": "This is the model of the potassium channel.",
+			"cellml": {
+					"mathsURL": "https://models.physiomeproject.org/e/49f/potassium_channel_model.xml/cellml_math"
+			}
+		},
+		{
+			"id": "id_004",
+			"location": "potassium_channel_n_gate_model.xml",
+			"description": "This is the model of the potassium channel's voltage-dependent inactivation gate.",
+			"cellml": {
+					"mathsURL": "https://models.physiomeproject.org/e/49f/potassium_channel_n_gate_model.xml/cellml_math"
+			}
+		},
+		{
+			"id": "id_005",
+			"location": "experiments/IK-potential-clamp.sedml",
+			"description": "A simulation experiment looking at the response of the potasium current to voltage clamps.",
+			"sedml": {
+				"plots": [
+					{
+						"id": "plot03"
+					}
+				]
+			}
+		}
+	]
+}

@@ -2,6 +2,7 @@
 {% import 'shared/pub.html' as pub %}
 {% block title %} {{page.title}} {% endblock %}
 {% block body %}
+		
   <h2>{{article.title}}</h2>
 <p>
   {{pub.authorlist(article)}}
@@ -41,4 +42,42 @@
   {% endif %}
   {{article.content}}
 
+
+  {% if article.archivedescription %}
+    <p>{{article.archivedescription}}</p>
+  {% else %}
+  {% endif %}
+		<!-- configure Dojo -->
+		<script type="text/javascript">
+			// Instead of using data-dojo-config, we're creating a dojoConfig
+			// object *before* we load dojo.js; they're functionally identical,
+			// it's just easier to read this approach with a larger configuration.
+			var dojoConfig = {
+				async : true,
+				// This code registers the correct location of the "andre"
+				// package so we can load Dojo from the CDN whilst still
+				// being able to load local modules
+				packages : [ {
+					name : "andre",
+					location : location.pathname.replace(/\/[^/]*$/, '') + '/js'
+				} ],
+				gfxRenderer : "svg,silverlight,vml" // svg is first priority
+			};
+		</script>
+		<!-- required styling -->
+		
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<!-- load Dojo -->
+		<script
+			src="https://ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js"
+			type="text/javascript"></script>
+		<!-- and load our plotting module -->
+		<script type="text/javascript">
+			require([ 'andre/createPlot' ], function(plotter) {
+		
+			});
+		</script>
+		
 {% endblock %}
+
+    
