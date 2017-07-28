@@ -22,10 +22,12 @@
 
 
 </p>
+{% if article.fulltexturl %}
 <p>Fulltext available: 
-  {% if article.fulltexturl %}
-    <a href="{{article.fulltexturl}}" target="_blank"><i class="fi-page" style="margin-right:5px"> </i>PDF</a>
-  {% else %}
+  <a href="{{article.fulltexturl}}" target="_blank"><i class="fi-page" style="margin-right:5px"> </i>PDF</a>
+</p>
+{% else %}
+  <p><em>Fulltext not yet available.</em></p>
   {% endif %}
   {% if article.primarypaper %}
   {% endif %}
