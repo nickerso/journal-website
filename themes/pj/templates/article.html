@@ -43,5 +43,48 @@
   {% else %}
   {% endif %}
   {{article.content}}
+  {% if article.modelviewurl %}
+    <button class="button" name="Reset View" value="OK" type="button" onclick="resetView()">Reset View</button>
+    <button class="button" name="View All" value="OK" type="button" onclick="viewAll()">View All</button>
+    <script src="{{SITEURL}}/theme/js/models/three.min.js"></script>
+    <script src="{{SITEURL}}/theme/js/models/zinc_threejs_control.js"></script>
+    <script src="{{SITEURL}}/theme/js/models/zinc_3js_renderer.js"></script>
+    <script>
+      var currentModel = undefined;
+      
+      container = document.createElement( 'div' );
+      document.body.appendChild( container );
+      container.style.height = "500px"
 
+      zincRenderer = new Zinc.Renderer(container, window);
+      Zinc.defaultMaterialColor = 0xFFFF9C
+      zincRenderer.initialiseVisualisation();
+      
+      
+      load();
+      zincRenderer.animate();
+      
+      function load() {
+      var scene = zincRenderer.getCurrentScene();
+      scene.loadViewURL("{{article.modelviewurl}}");
+      {% for metadata_url in article.modelmetadataurls %}
+	scene.loadMetadataURL("{{metadata_url}}");
+      {% endfor %}
+      var directionalLight = zincRenderer.getCurrentScene().directionalLight;
+      directionalLight.intensity = 1.8;
+      }
+
+      
+      function resetView()
+      {
+      zincRenderer.resetView();
+      }
+      
+      function viewAll()
+      {
+      zincRenderer.viewAll();
+      }
+
+    </script>
+  {% endif %}
 {% endblock %}
