@@ -95,9 +95,10 @@
 			"dojo/json",
 			"dijit/TitlePane",
 			"views/cellml",
+			"views/sedml",
 			"dojo/text!{{article.archivedescription}}",
 			"dojo/domReady!"
-		], function(dom, json, TitlePane, CellmlView, data){
+		], function(dom, json, TitlePane, CellmlView, SedmlView, data){
 	
 	    	// parse the archive description
 	    	var archiveDescription = json.parse(data);
@@ -116,6 +117,13 @@
 					content = new CellmlView({
 						"description": item.description,
 						"cellml": item.cellml
+					});
+				} else if ("sedml" in item) {
+					console.log(item.sedml);
+					console.log(item.sedml.simulateInOpenCOR)
+					content = new SedmlView({
+						"description": item.description,
+						"sedml": item.sedml
 					});
 				} else {
 					content = item.description; 

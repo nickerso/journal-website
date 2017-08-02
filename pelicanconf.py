@@ -28,7 +28,7 @@ AUTHOR = u'The Physiome Project'
 SITENAME = u'The Physiome Journal'
 SITEURL = ''
 
-STATIC_PATHS = ['pdfs', 'models', 'archive-descriptions']
+STATIC_PATHS = ['pdfs', 'models', 'archive-descriptions', 'data']
 
 PATH = 'content'
 

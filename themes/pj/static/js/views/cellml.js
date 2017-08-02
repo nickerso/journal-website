@@ -43,7 +43,7 @@ define([
             }
             if ("simulateInOpenCOR" in this.cellml) {
             	var span = dc.create("a", {
-            		href: this.cellml.simulateInIoenCOR,
+            		href: this.cellml.simulateInOpenCOR,
             		title: "Simulate this model in OpenCOR",
             		innerHTML: "Simulate in OpenCOR",
             		class: "action-button cellml-action-button"

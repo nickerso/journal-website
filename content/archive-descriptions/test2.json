@@ -18,12 +18,54 @@
 			"location": "experiments/cell-model.sedml",
 			"description": "A simulation experiment for the whole cell model simulations.",
 			"sedml": {
+				"simulateInOpenCOR": "opencor://openFile/https://models.physiomeproject.org/workspace/49e/rawfile/0a252e033bdf5e65d5a6490c9d3ade9035fef04e/experiments/cell-model.sedml",
+				"dataFile": "/data/nickerson-and-noble-1962.csv",
 				"plots": [
 					{
-						"id": "plot01"
+						"id": "plot01",
+						"title": "Membrane potential",
+						"series" : [
+							{
+								"x": "exposed_variables | time (ms)",
+								"y": "exposed_variables | V (mV)"
+							}
+						]
 					},
 					{
-						"id": "plot02"
+						"id": "plot02",
+						"title": "Gating variables",
+						"series" : [
+							{
+								"x": "exposed_variables | time (ms)",
+								"y": "exposed_variables | h (dimensionless)"
+							},
+							{
+								"x": "exposed_variables | time (ms)",
+								"y": "exposed_variables | m (dimensionless)"
+							},
+							{
+								"x": "exposed_variables | time (ms)",
+								"y": "exposed_variables | n (dimensionless)"
+							}
+						]
+					},
+					{
+						"id": "plot03",
+						"title": "Membrane currents",
+						"series" : [
+							{
+								"x": "exposed_variables | time (ms)",
+								"y": "exposed_variables | i_Leak (uA_per_mm2)"
+							},
+							{
+								"x": "exposed_variables | time (ms)",
+								"y": "exposed_variables | i_K (uA_per_mm2)"
+							},
+							{
+								"x": "exposed_variables | time (ms)",
+								"y": "exposed_variables | i_Na (uA_per_mm2)"
+							}
+						]
 					}
 				]
 			}
