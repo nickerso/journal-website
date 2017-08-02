@@ -1,9 +1,9 @@
 Slug: 10.5072/FK2.stagefigshare.c.2732114.v3
-Title: Testing model exploration.
-Date: 2006-01-01
+Title: A Modification of the Hodgkin-Huxley Equations Applicable to Purkinje Fibre Action and Pace-Maker Potentials.
+Date: 2017-08-01
 PubAuthors: Nickerson, D. P.
-	Zeng, N.
 	Hunter, P. J.
+	Noble, D.
 ArchiveDescription: /archive-descriptions/test2.json
 
 ### Freetext content
