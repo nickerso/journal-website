@@ -12,10 +12,6 @@
 	To cite this article, use the DOI: <a href="https://doi.org/{{article.doi}}">{{article.doi}}</a>
 </p>
 {% endif %}
-<hr>
-{% if article.primarypaperurl %}
-  <p><em>This <em>Physiome</em> paper describes data and models from the primary paper <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></em></p>
-{% endif %}
 <p>{% if article.mathsurl %}
   <a class="button alert small" href="{{article.mathsurl}}" rel="noopener" target="_blank">Maths</a>
 {% endif %}
@@ -25,16 +21,26 @@
   {% if article.runmodelurl %}
   <a class="button alert small" href="{{article.runmodelurl}}">Launch with OpenCOR</a>
 {% endif %}
-
-
 </p>
+
+{% if article.primarypaperurl %}
+  <p>This <em>Physiome</em> paper describes data and models from the primary paper: <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></p>
+{% endif %}
+
 {% if article.fulltexturl %}
-<p>Article PDF available at: 
+<p><em>Physiome</em> article PDF available at: 
   <a href="{{article.fulltexturl}}" target="_blank"><i class="fi-page" style="margin-right:5px"> </i>{{article.fulltexturl}}</a>
 </p>
 {% else %}
   <p><em>Article PDF not yet available.</em></p>
-  {% endif %}
+{% endif %}
+{% if article.archiveurl %}
+<p><em>Physiome</em> article <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="1" title="This is a COMBINE archive (Open Modelling Exchange format, OMEX) zip file containing all the resources required to support reproducibility.">archive</span> available at: 
+  <a href="{{article.archiveurl}}" target="_blank">{{article.archiveurl}}</a>
+</p>
+{% else %}
+  <p><em>Article archive not yet available.</em></p>
+{% endif %}
   {% if article.primarypaper %}
   {% endif %}
   {% if article.documents %}
