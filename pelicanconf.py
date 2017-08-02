@@ -25,10 +25,10 @@ def template_pages_map(root):
 
 
 AUTHOR = u'The Physiome Project'
-SITENAME = u'The PHYSIOME Journal'
+SITENAME = u'The Physiome Journal'
 SITEURL = ''
 
-STATIC_PATHS = ['pdfs','models']
+STATIC_PATHS = ['pdfs', 'models', 'archive-descriptions', 'data']
 
 PATH = 'content'
 

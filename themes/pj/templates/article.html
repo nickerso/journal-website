@@ -2,13 +2,15 @@
 {% import 'shared/pub.html' as pub %}
 {% block title %} {{page.title}} {% endblock %}
 {% block body %}
+		
   <h2>{{article.title}}</h2>
 <p>
   {{pub.authorlist(article)}}
 </p>
-<hr>
-{% if article.primarypaperurl %}
-  <p><em>This <em>Physiome</em> paper describes data and models from the primary paper <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></em>.</p>
+{% if article.doi %}
+<p>
+	To cite this article, use the DOI: <a href="https://doi.org/{{article.doi}}">{{article.doi}}</a>
+</p>
 {% endif %}
 <p>{% if article.mathsurl %}
   <a class="button alert small" href="{{article.mathsurl}}" rel="noopener" target="_blank">Maths</a>
@@ -19,16 +21,26 @@
   {% if article.runmodelurl %}
   <a class="button alert small" href="{{article.runmodelurl}}">Launch with OpenCOR</a>
 {% endif %}
-
-
 </p>
+
+{% if article.primarypaperurl %}
+  <p>This <em>Physiome</em> paper describes data and models from the primary paper: <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></p>
+{% endif %}
+
 {% if article.fulltexturl %}
-<p>Fulltext available: 
-  <a href="{{article.fulltexturl}}" target="_blank"><i class="fi-page" style="margin-right:5px"> </i>PDF</a>
+<p><em>Physiome</em> article PDF available at: 
+  <a href="{{article.fulltexturl}}" target="_blank"><i class="fi-page" style="margin-right:5px"> </i>{{article.fulltexturl}}</a>
 </p>
 {% else %}
-  <p><em>Fulltext not yet available.</em></p>
-  {% endif %}
+  <p><em>Article PDF not yet available.</em></p>
+{% endif %}
+{% if article.archiveurl %}
+<p><em>Physiome</em> article <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="1" title="This is a COMBINE archive (Open Modelling Exchange format, OMEX) zip file containing all the resources required to support reproducibility.">archive</span> available at: 
+  <a href="{{article.archiveurl}}" target="_blank">{{article.archiveurl}}</a>
+</p>
+{% else %}
+  <p><em>Article archive not yet available.</em></p>
+{% endif %}
   {% if article.primarypaper %}
   {% endif %}
   {% if article.documents %}
@@ -42,7 +54,92 @@
     </p>
   {% else %}
   {% endif %}
-  {{article.content}}
+
+  {% if article.archivedescription %}
+    <div class="claro">
+    	<h2 id="archiveHeader"></h2>
+    	<div id="archiveItems"></div>
+    </div>
+	<!-- load Dojo -->
+	<script type="text/javascript">
+		// Instead of using data-dojo-config, we're creating a dojoConfig
+		// object *before* we load dojo.js; they're functionally identical,
+		// it's just easier to read this approach with a larger configuration.
+		var dojoConfig = {
+			async : true,
+			// This code registers the correct location of the "andre"
+			// package so we can load Dojo from the CDN whilst still
+			// being able to load local modules
+			packages : [ {
+				name : "views",
+				location : '/theme/js/views'
+			} ],
+			gfxRenderer : "svg,silverlight,vml" // svg is first priority
+		};
+	</script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/dojo/1.11.2/dojo/dojo.js"
+		type="text/javascript"></script>
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dijit/themes/claro/claro.css" media="screen">
+	<!--
+	<script
+		src="{{SITEURL}}/theme/js/dojo-release-1.12.2-src/dojo/dojo.js"
+		type="text/javascript"></script>
+	<link rel="stylesheet" href="{{SITEURL}}/theme/js/dojo-release-1.12.2-src/dijit/themes/claro/claro.css" media="screen">
+	-->
+	<link rel="stylesheet" href="{{SITEURL}}/theme/css/article.css" />
+	<!-- and load our archive viewer -->
+	<script type="text/javascript">    
+	    require([
+			"dojo/dom",
+			"dojo/json",
+			"dijit/TitlePane",
+			"views/cellml",
+			"views/sedml",
+			"dojo/text!{{article.archivedescription}}",
+			"dojo/domReady!"
+		], function(dom, json, TitlePane, CellmlView, SedmlView, data){
+	
+	    	// parse the archive description
+	    	var archiveDescription = json.parse(data);
+	    	
+	    	// set the heading
+	    	dom.byId("archiveHeader").innerHTML = "COMBINE Archive DOI: " + archiveDescription.doi
+	    	
+	    	// create the title panes
+	    	var items = archiveDescription.children;
+	    	var nItems = items.length;
+	    	for (var i = 0; i < nItems; i++) {
+				var item = items[i];
+				console.log(item);
+				var content = null;
+				if ("cellml" in item) {
+					content = new CellmlView({
+						"description": item.description,
+						"cellml": item.cellml
+					});
+				} else if ("sedml" in item) {
+					console.log(item.sedml);
+					console.log(item.sedml.simulateInOpenCOR)
+					content = new SedmlView({
+						"description": item.description,
+						"sedml": item.sedml
+					});
+				} else {
+					content = item.description; 
+				}
+		    	var tp = new TitlePane({
+		    		"title": item.location,
+		    		"open": "highlight" in item ? item.highlight : false,
+		    		"content": content
+		    	});
+		    	dom.byId("archiveItems").appendChild(tp.domNode);
+		    	tp.startup();
+	    	}
+		});
+   	</script>
+  {% else %}
+    {{article.content}}
   {% if article.modelviewurl %}
     <button class="button" name="Reset View" value="OK" type="button" onclick="resetView()">Reset View</button>
     <button class="button" name="View All" value="OK" type="button" onclick="viewAll()">View All</button>
@@ -87,4 +184,7 @@
 
     </script>
   {% endif %}
+  {% endif %}
 {% endblock %}
+
+    
