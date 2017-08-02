@@ -7,9 +7,14 @@
 <p>
   {{pub.authorlist(article)}}
 </p>
+{% if article.doi %}
+<p>
+	To cite this article, use the DOI: <a href="https://doi.org/{{article.doi}}">{{article.doi}}</a>
+</p>
+{% endif %}
 <hr>
 {% if article.primarypaperurl %}
-  <p><em>This <em>Physiome</em> paper describes data and models from the primary paper <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></em>.</p>
+  <p><em>This <em>Physiome</em> paper describes data and models from the primary paper <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></em></p>
 {% endif %}
 <p>{% if article.mathsurl %}
   <a class="button alert small" href="{{article.mathsurl}}" rel="noopener" target="_blank">Maths</a>
@@ -24,11 +29,11 @@
 
 </p>
 {% if article.fulltexturl %}
-<p>Fulltext available: 
-  <a href="{{article.fulltexturl}}" target="_blank"><i class="fi-page" style="margin-right:5px"> </i>PDF</a>
+<p>Article PDF available at: 
+  <a href="{{article.fulltexturl}}" target="_blank"><i class="fi-page" style="margin-right:5px"> </i>{{article.fulltexturl}}</a>
 </p>
 {% else %}
-  <p><em>Fulltext not yet available.</em></p>
+  <p><em>Article PDF not yet available.</em></p>
   {% endif %}
   {% if article.primarypaper %}
   {% endif %}
