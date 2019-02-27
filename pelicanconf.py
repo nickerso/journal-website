@@ -7,21 +7,21 @@ from os import sep
 from functools import partial
 
 def fullpath(root,dirpath,fname):
-	if dirpath[len(dirpath)-1] != sep:
-		dirpath += sep
-	if root[len(root)-1] != sep:
-		root += sep
-	sub_dirpath = dirpath[dirpath.find(root)+len(root):]
-	return (sub_dirpath + fname,dirpath + fname)
+    if dirpath[len(dirpath)-1] != sep:
+        dirpath += sep
+        if root[len(root)-1] != sep:
+            root += sep
+        sub_dirpath = dirpath[dirpath.find(root)+len(root):]
+        return (sub_dirpath + fname,dirpath + fname)
 
 def template_pages_map(root):
-	result = {}
-	for (dirpath, dirnames, filenames) in walk(root):
-                dirpathise = partial(fullpath,root,dirpath)
-		fullnames = map(dirpathise,filenames)
-		for (name,fullname) in fullnames:
-			result[fullname] = name
-	return result
+    result = {}
+    for (dirpath, dirnames, filenames) in walk(root):
+            dirpathise = partial(fullpath,root,dirpath)
+            fullnames = map(dirpathise,filenames)
+            for (name,fullname) in fullnames:
+                result[fullname] = name
+    return result
 
 
 AUTHOR = u'The Physiome Project'
