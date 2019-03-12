@@ -4,26 +4,9 @@
 {% block body %}
 <div class="callout">
   <p><em>Physiome</em> publishes reproducible and reusable mathematical models of physiological processes where the experimental details and model validation have been published or accepted for publication in a recognised 'primary' peer-reviewed journal. Models that cannot yet be guaranteed to be reproducible via the Physiome markup languages, will not be published in <em>Physiome</em> but can be uploaded to the Physiome Model Repository for later curation when the Physiome standards are further developed. <em>Physiome</em> editors will help as much as is currently possible with model curation and annotation to ensure that the modeling results claimed in the primary paper are consistent with the published model. <em>Physiome</em> is open access with a low APC (Author Processing Charge). Models can be displayed (in mathematical form and in various programming languages) and run directly from the journal website with freely available open source software.</p>
-  <p>To run Physiome models on your laptop or desktop computer, download <a href="http://www.opencor.ws/">OpenCOR</a> and read <a href="http://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/">the tutorial online</a>.</p>
+  <p>To run Physiome models on your laptop or desktop computer, download <a href="http://www.opencor.ws/">OpenCOR</a> and read <a href="http://tutorial-on-cellml-opencor-and-pmr.readthedocs.io/en/latest/">the tutorial online</a>.</p> 
 </div>
-
-<style>
-    .button {
-        border: 1px solid #e6e6e6;
-        color: black;
-        padding: 15px 25px;
-        text-align: center;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    </style>
-    <a <button href="instructions-to-authors" class="button">Submit your article</button> </a>
-
   <h3>Latest articles</h3>
   {{ pub.pubtable(articles_page.object_list[:9]) }}
   <p><a href="{{SITEURL}}/articles">See all articles...</a></p>
 {% endblock %}
-
-
-

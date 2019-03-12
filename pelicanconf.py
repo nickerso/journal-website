@@ -6,7 +6,6 @@ from os import walk
 from os import sep
 from functools import partial
 
-
 def fullpath(root, dirpath, fname):
     if dirpath[len(dirpath) - 1] != sep:
         dirpath += sep
@@ -14,7 +13,6 @@ def fullpath(root, dirpath, fname):
         root += sep
     sub_dirpath = dirpath[dirpath.find(root) + len(root):]
     return (sub_dirpath + fname, dirpath + fname)
-
 
 def template_pages_map(root):
     result = {}
