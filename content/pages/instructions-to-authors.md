@@ -3,17 +3,23 @@ Slug: instructions-to-authors
 
 Instructions to Authors
 -----------------------
-All submissions to *Physiome* must be associated with one, or more, articles accepted by peer-reviewed physiology, bioengineering or biophysics journals. Authors are encouraged to prepare their Physiome submission(s) in parallel to the primary paper. Submissions will not be curated and evaluated until the primary paper is accepted, but authors will be able to access and share their submission via the [Physiome Model Repository](https://models.physiomeproject.org).
+The main task for a *Physiome* paper is to provide a citable link between a published, validated model and its instance in the [Physiome Model Repository (PMR)](https://models.physiomeproject.org). The model files submitted to the PMR must fulfill the demands of reusibility stated by the Physiome Project (LINK HERE). All submissions to *Physiome* must also be associated with one, or more, articles accepted by peer-reviewed physiology, bioengineering or biophysics journals, here refered to as a *primary publication*. Authors are encouraged to prepare their Physiome submission(s) in parallel to the primary paper. Submissions will not be curated and evaluated until the primary paper is accepted, but authors will be able to access and share their submission via the PMR.
 
- <div style = "text-align: center;">
- 
-<img src="CurationAndSubmissionFlow.png" alt="Curation flow" style="width:128px;height:128px;">
-
-  </div>
 
 ### 1. Preparing your submission
 Submissions should be prepared using the Overleaf template or MS Word template. Please contact *Physiome* if you have any queries. These templates will provide the main document for the submission, but the submission must include all resources required to evaluate the reproducibility, reusability, and discoverability of the submission. As described in the templates, such resources can be directly included in the Overleaf project or zip archive, or linked to via appropriate online repositories or databases.
 
+* **1.1 Information included in your *Physiome* paper **
+
+A *Physiome* paper is a description of the model submitted to the PMR. If the model code submitted is complete, all parameter values, units, etc will be included in the files and do not to be printed in the article. 
+The paper should include: i) reference(s) to  the primary paper(s); ii) figures showing that the code simulates the same graphs as shown in the primary paper; iii) any modifications made to the model, including motivations and origina thereof; iv) references to the origins of the parameter values, if other than the primary paper; v) a brief explanation of the biological system modelled. 
+
+It is encouraged that the authors of the primary primary paper are included in the *Physiome* paper. The *Physiome* team can help with reaching out to them if needed. 
+
+
+* **1.2 SOME INSTRUCTIONS ABOUT FIGURES AND MODEL FILES. I GUESS THESE DEPENDS ON THE SUBMISSION SYSTEM.**
+
+InstructionsInstructionsInstructionsInstructionsInstructionsInstructionsInstructionsInstructionsInstructionsInstructionsInstructions
 
 ### 2. Types of submissions
 The following types of submissions will be considered for publication in *Physiome*.
@@ -36,45 +42,65 @@ The following types of submissions will be considered for publication in *Physio
 	
     
     ### 3. Physiome Model Repository (PMR) submission
+
+    
+    **3.1 What is the Physiome Model Repository?**
+    
+    The purpose of the Physiome Model Repository (PMR) is to store and exchange computer-based mathematical models. Upon receipt of a submission, curators will create a private PMR workspace for the submission – a version controlled repository within PMR. When a Physiome submission consists of models or data already in PMR, then that will be linked to this submission workspace internally to PMR.
+    Most models in the PMR are written in the programming language CellML, which allows scientists to share models even if they are using different model-building software. The models can be annontated through SEMgen, which connects them to databases of for example genes and proteins. These features enables them to reuse components from one model in another, thus accelerating model building.
+    
+    **3.2 How do I submit my model to the Physiome Model Repository?**
+    
+    DO YOU NEED TO HAVE A PHYSIOME PAPER TO SUBMIT TO PMR IN THE FUTURE?    
     The figure below presents an overview of the flow of a Physiome submission from the point at which it is submitted through preliminary checking, curation and evaluation, and the final deposition in the Physiome Figshare portal upon a successful evaluation. We describe below this sequence in detail.
     
-    * **3.1** What is the Physiome Model Repository?
+    <div style = "text-align: center;">
     
-    The purpose of CellML is to store and exchange computer-based mathematical models. CellML allows scientists to share models even if they are using different model-building software. It also enables them to reuse components from one model in another, thus accelerating model building.
-    The Physiome Model Repository (PMR) is used to manage the curation of Physiome submissions. Upon receipt of a submission, curators will create a private PMR workspace for the submission – a version controlled repository within PMR. When a Physiome submission consists of models or data already in PMR, then that will be linked to this submission workspace internally to PMR.
+    <img src="CurationAndSubmissionFlow.png" alt="Curation flow" style="width:70%;height:70%;">
     
-    
-    * **3.2** How do I submit my model to the Physiome Model Repository? 
-    
+    </div>
+
     The Physiome editors will first check that a submission meets the minimum requirements for evaluating reproducibility. These requirements are listed below.
-    1.    There is a clear link to:
-    a.    primary paper for original and retrospective submissions;
-    b.    existing Physiome article for a letter; or
-    c.    both for reviews.
-    2.    The submission relates to one or more quantitative models.
-    3.    Reproducible targets clearly identified.
-    a.    Must include at least some predictions from the primary paper.
-    b.    May include further validation, testing, estimation, etc., targets not directly reported in primary paper.
-    4.    Model implementation(s) is executable.
-    a.    The curation team must be able to execute the simulations required to test the reproducibility of the model(s).
-    b.    These may require specific software tools, but details for non-standard tools must be provided.
+    
+    <body>
+    <dl type="1">
+    <dt>1.    There is a clear link to:
+    <dd>a.    primary paper for original and retrospective submissions;
+    <dd>b.    existing Physiome article for a letter; or
+   <dd> c.    both for reviews.
+     <dt>2.    The submission relates to one or more quantitative models.
+     <dt>3.    Reproducible targets clearly identified.
+    <dd>a.    Must include at least some predictions from the primary paper.
+    <dd>b.    May include further validation, testing, estimation, etc., targets not directly reported in primary paper.
+    <dt>4.    Model implementation(s) is executable.
+    <dd>a.    The curation team must be able to execute the simulations required to test the reproducibility of the model(s).
+   <dd> b.    These may require specific software tools, but details for non-standard tools must be provided.
+   <dl>
+   <body>
+   
     If a submission meets these minimum requirements the submission will proceed to curation.
     
-    Use of standard formats
-    For maximal reusability, reproducibility, and discoverability, it is essential for mathematical models and simulation experiments to be encoded in appropriate standard formats. The IUPS Physiome Project follows the guidance of the Computational Modelling in Biology Network (COMBINE) as to which standards are appropriate for various types of data.
+    For maximal reusability, reproducibility, and discoverability, it is essential for mathematical models and simulation experiments to be encoded in appropriate standard formats. The IUPS Physiome Project follows the guidance of the [Computational Modelling in Biology Network (COMBINE)](https://co.mbine.org) as to which standards are appropriate for various types of data.
     The scope of computational models expected to be submitted to Physiome will often exceed what the current standard formats are able to represent, but a key role of the curators is to identify models, or parts of models, which should be encoded in a standard format. When such an identification is made, the curators will work with the authors to try and encode the model in that format.
     It is important to note that while the appropriate use of standard formats will inform the evaluation of a Physiome submission, capabilities of current accepted standards and software tools should not impede the submission of a piece of work to Physiome. It is, however, the remit of Physiome to inform the standards communities as to requirements for eventually can represent all models and simulation experiments accepted to Physiome.
+
+        
+    * **3.3 Curation**
     
-    
-    
-    * **3.3** Curation
-    Once submitted to the PMR, models files will be curated, ensuring that they can simulate the figures of the primary paper, as persented in the Physiome submission. 
+    Once submitted to the PMR, the model will be curated, ensuring that it can simulate the figures of the primary paper, as persented in the Physiome submission. 
     A full CellML model submission must include: 
-    - Annotation
-    - Units
-    - All parameter values and initial values
-    - All equations
-    - Possibility to plot all variables
+    
+    <body>
+    <ul>
+    <li>Annotation 
+    <li> Units
+    <li> All parameter values and initial values
+    <li> All equations
+    <li> Possibility to plot all variables
+    <ul>
+    <body>
+    
+    <div>
     
     If you submit a model in any other format than CellML, you need to submit a document specifying where to find the corresponding information. 
     
@@ -82,40 +108,50 @@ The following types of submissions will be considered for publication in *Physio
     The curators will then execute the required simulation experiments and perform the comparison to determine a measure of reproducibility. 
     
     The following criteria will be considered when evaluating reproducibility.
-    1.    Are the required simulation experiments available?
-    ●    Require only standard tools or access to tools is provided.
-    ●    Or standard formats used.
-    2.    Can the simulation experiments be executed?
-    3.    Do the model predictions match the targets?
-    4.    Repeatable vs reproducible
-    ●    Matlab code that only works in Matlab is repeatable but not reproducible
-    ●    Code that only works with a given library may be repeatable but not reproducible.
-    ●    Standard formats used for everything, simulation experiments can be performed in a different tool to that used in the primary paper => reproducible?
-    5.    Coverage? Testing?
+    
+    <body>
+    <dl type="1">
+    <dt> 1.    Are the required simulation experiments available?
+    <dd> -    Require only standard tools or access to tools is provided.
+    <dd> -    Or standard formats used.
+    <dt> 2.    Can the simulation experiments be executed?
+    <dt> 3.    Do the model predictions match the targets?
+    <dt> 4.    Repeatable vs reproducible
+    <dd> -    Matlab code that only works in Matlab is repeatable but not reproducible
+    <dd> -    Code that only works with a given library may be repeatable but not reproducible.
+    <dd> -    Standard formats used for everything, simulation experiments can be performed in a different tool to that used in the primary paper => reproducible?
+    <dt> 5.    Coverage? Testing?
+    <dl>
+        <body>
+    
+    Evaluating reusability: Same as above, but now dealing with how understandable/comprehensible the submission is.
+    
+    <body>
+    <ol type="1">
+    <li>    Parameter sources clearly identified
+   <li>     Provenance is clear
+    <li>    Algorithms used specified, and their parameterisations
+    <li>    Appropriate standards used
+    <li>    Modularity
+    <li>    Availability of code and its accessibility (undocumented spaghetti code vs well documented structured code)
+    <li>    Annotation
+    <ol>
+    <body>
     
     
-    Evaluating reusability
-    Same as above, but now dealing with how understandable/comprehensible the submission is.
-    1.    Parameter sources clearly identified
-    2.    Provenance is clear
-    3.    Algorithms used specified, and their parameterisations
-    4.    Appropriate standards used
-    5.    Modularity
-    6.    Availability of code and its accessibility (undocumented spaghetti code vs well documented structured code)
-    7.    Annotation
+### 4. Primary Publication
     
+* **4.1 What is a Primary Publication and why do I need one?**
     
-    
-    ### 4. Primary Publication
-    * **4.1** What is a Primary Publication?
-    Physiome papers will describe the details of mathematical models and computational simulations associated with a ‘primary’ experimental/modelling paper that has recently been accepted to a peer-reviewed physiology, bioengineering or biophysics journal. the primary paper that describes the experiments, data and model(s) has been accepted by a recognised peer-reviewed journal (referred to here as the ‘primary journal’). 
-    
-    * **4.2** Why do I need one?
-The Primary publication provides validation of your model by comparing the simulations to data. 
+The primary publication is an experimental/modelling paper that has recently been accepted to a peer-reviewed physiology, bioengineering or biophysics journal. The primary paper shows that the model is validated by describing the experiments and data, and the model(s) fit to the data, as well as the biological background and why the model is important. Physiome papers will describe the details of mathematical models and computational simulations associated with a ‘primary’ has been accepted by a recognised peer-reviewed journal, but does not deal with the validation of the models. Therefore, every Physiome paper needs to be associated with a primary paper. 
 
-    ### 5. Cost
+### 5. Cost
     
-    Physiome papers are citable with a DOI and published as open access with an author processing charge of US$300.
+Physiome papers are citable with a DOI and published as open access with an author processing charge of US$300. This fee covers both the Physiome and the PMR submission.
     
-     ### 6. Copyright of submission
+### 6. Copyright of submission
     
+WHAT ARE THE TERMS OF THIS? HOW OPEN IS ACCESS?
+
+
+
