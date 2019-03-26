@@ -12,3 +12,6 @@ Note that a submission (***Original*** or ***Retrospective***) will only be acce
 *Physiome* will provide submission templates to ensure consistent documentation of the model and will work with authors to ensure that the published models reproduce the figures of the primary paper.
 
 *Physiome* articles will be available on the *Physiome* Figshare portal (..), where the *Physiome* paper and the zipped collection of models and data are available with DOIs. “Live” models and simulation descriptions will also be available in the *[Physiome Model Repository](https://models.physiomeproject.org)*. Wherever possible, models encoded in the standard formats are available to run from directly from this website.
+
+See our [Editorial Board](editorial-board.html).
+
