@@ -13,13 +13,13 @@
 </p>
 {% endif %}
 <p>{% if article.mathsurl %}
-  <a class="button alert small" href="{{article.mathsurl}}" rel="noopener" target="_blank">Maths</a>
+  <a class="button small" href="{{article.mathsurl}}" rel="noopener" target="_blank">Maths</a>
 {% endif %}
 {% if article.codeurl %}
-  <a class="button alert small" href="{{article.codeurl}}" rel="noopener" target="_blank">Code</a>
+  <a class="button small" href="{{article.codeurl}}" rel="noopener" target="_blank">Code</a>
   {% endif %}
   {% if article.runmodelurl %}
-  <a class="button alert small" href="{{article.runmodelurl}}">Launch with OpenCOR</a>
+  <button type="button" href="{{article.runmodelurl}}">Launch with OpenCOR</button>
 {% endif %}
 </p>
 
