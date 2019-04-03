@@ -13,13 +13,13 @@
 </p>
 {% endif %}
 <p>{% if article.mathsurl %}
-  <a class="button small" href="{{article.mathsurl}}" rel="noopener" target="_blank">Maths</a>
+  <a class="button" href="{{article.mathsurl}}" rel="noopener" target="_blank" ><img src="PhysiomeJournalWebsite/output/theme/images/PMR_button.svg"> </a>
 {% endif %}
 {% if article.codeurl %}
-  <a class="button small" href="{{article.codeurl}}" rel="noopener" target="_blank">Code</a>
-  {% endif %}
+  <a class="button" href="{{article.codeurl}}" rel="noopener" target="_blank">Code</a>
+{% endif %}
   {% if article.runmodelurl %}
-  <button type="button" href="{{article.runmodelurl}}">Launch with OpenCOR</button>
+  <a class="button" href="{{article.runmodelurl}}">Launch with OpenCOR</a>
 {% endif %}
 </p>
 
@@ -41,7 +41,14 @@
 {% else %}
   <p><em>Article archive not yet available.</em></p>
 {% endif %}
-  {% if article.primarypaper %}
+
+{% if article.abstract %}
+  <p><em>Abstract:</em> <a>{{article.abstract(article)}}</a></p>
+{% else %}
+  <p><em>Article abstract not yet available.</em></p>
+{% endif %}
+
+{% if article.primarypaper %}
   {% endif %}
   {% if article.documents %}
     <p>Extra documents:
