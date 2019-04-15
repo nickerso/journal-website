@@ -13,13 +13,13 @@
 </p>
 {% endif %}
 <p>{% if article.mathsurl %}
-  <a class="button" href="{{article.mathsurl}}" rel="noopener" target="_blank" ><img src="PhysiomeJournalWebsite/output/theme/images/PMR_button.svg"> </a>
+<a class="button" href="{{article.mathsurl}}" style="width: 140px; height: 60px;" rel="noopener" target="_blank" ><img src="PMR_button.svg" style="width: 100%; height: 100%;"> </a>
 {% endif %}
 {% if article.codeurl %}
-  <a class="button" href="{{article.codeurl}}" rel="noopener" target="_blank">Code</a>
+<a class="button" href="{{article.codeurl}}" style="width: 140px; height: 60px;" rel="noopener" target="_blank" ><img src="Fulltext_button.svg"> </a>
 {% endif %}
   {% if article.runmodelurl %}
-  <a class="button" href="{{article.runmodelurl}}">Launch with OpenCOR</a>
+  <a class="button" href="{{article.runmodelurl}}" style="width: 140px; height: 60px;"><img src="Run_button.svg"> </a>
 {% endif %}
 </p>
 
@@ -42,11 +42,6 @@
   <p><em>Article archive not yet available.</em></p>
 {% endif %}
 
-{% if article.abstract %}
-  <p><em>Abstract:</em> <a>{{article.abstract(article)}}</a></p>
-{% else %}
-  <p><em>Article abstract not yet available.</em></p>
-{% endif %}
 
 {% if article.primarypaper %}
   {% endif %}
