@@ -39,8 +39,9 @@ The following types of submissions will be considered for publication in *Physio
 * **2.4 Letters**
 
 	A letter is an original submission that provides new insights about, or refinement of, a model that is already published on the Physiome site. This format allows publication of material that in itself may not justify a separate submission to a primary peer-reviewed journal, but which may still be highly instrumental for improving an existing model, expand its empirical scope or invoke experimental and theoretical research that may drive new model development. Examples of such material include, but are not restricted to, experimental measurements of important parameter values that have been only indirectly estimated in the original paper, empirically or theoretically justified questioning or refutation of critical model premises, experimental data confirming or refuting model predictions, and theoretical analyses of the model that provide novel insights that may spur further model development or experimental work.
-	
     
+    [Here you can find templates and examples for the different types of submissions.](articles.html) 
+	
     ### 3. Physiome Model Repository (PMR) submission
 
     
@@ -51,7 +52,6 @@ The following types of submissions will be considered for publication in *Physio
     
     **3.2 How do I submit my model to the Physiome Model Repository?**
     
-    DO YOU NEED TO HAVE A PHYSIOME PAPER TO SUBMIT TO PMR IN THE FUTURE?    
     The figure below presents an overview of the flow of a Physiome submission from the point at which it is submitted through preliminary checking, curation and evaluation, and the final deposition in the Physiome Figshare portal upon a successful evaluation. We describe below this sequence in detail.
     
     <div style = "text-align: center;">
@@ -148,6 +148,7 @@ The primary publication is an experimental/modelling paper that has recently bee
 ### 5. Cost
     
 Physiome papers are citable with a DOI and published as open access with an author processing charge of US$300. This fee covers both the Physiome and the PMR submission.
+HOW DO I PAY?
     
 ### 6. Copyright of submission
     
