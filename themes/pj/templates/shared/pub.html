@@ -8,16 +8,13 @@
   </td>
   <td class="medium-5 columns">
     {% if pub_article.fulltexturl %}
-    <span style="margin-right:6px" class="small"><a class="button small" target="_blank" href="{{pub_article.fulltexturl}}">Fulltext PDF</a></span>
+    <span><a class="button" href="{{pub_article.fulltexturl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="Fulltext_button.svg"> </a></span>
     {% endif %}
-    {% if pub_article.mathsurl %}
-    <span><a class="button small alert" target="_blank" rel="noopener" href="{{pub_article.mathsurl}}">Maths</a></span>
-    {% endif %}
-    {% if pub_article.codeurl %}
-    <span><a class="button small alert" target="_blank" rel="noopener" href="{{pub_article.codeurl}}">Code</a></span>
+    {% if pub_article.fulltexturl %}
+    <span><a class="button" href="{{pub_article.fulltexturl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="Fulltext_button.svg"> </a></span>
     {% endif %}
     {% if pub_article.runmodelurl %}
-    <span><a class="button small alert" href="{{pub_article.runmodelurl}}">Launch with OpenCOR</a></span>
+    <span><a class="button" href="{{pub_article.runmodelurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" ><img src="Run_button.svg"> </a></span>
     {% endif %}
 
   </td>
