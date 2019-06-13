@@ -147,7 +147,7 @@ The primary publication is an experimental/modelling paper that has been accepte
 
 ### 5. Cost
     
-Physiome papers are citable with a DOI and published as open access with an author processing charge of US$300. The fee is to be payed after acceptance of the submission, but before publication. See payment terms. (LINK)
+Physiome papers are citable with a DOI and published as open access with an author processing charge of US$300. The fee is to be paid after acceptance of the submission, but before publication. See payment terms. (LINK)
     
 ### 6. Copyright of submission
     
