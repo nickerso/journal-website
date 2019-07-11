@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,7 +12,7 @@
     <!--<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
   </head>
-  <body>
+  <body style="height: 100%; display: flex; flex-direction: column">
     <!-- Top navigation bar -->
       <div class="row">
 	<div class="small-12 columns"></div>
@@ -49,7 +49,7 @@
       </div>
     </div>
     <!-- Body -->
-    <div class="body" style="margin-top:20px">
+    <div class="body" style="margin-top:20px; flex: 1 0 auto">
       <div class="row">
 
 	{% block body %}
@@ -65,20 +65,15 @@
       <!-- Footer with contact info -->
       
       <style>
-          .footer {
-
-              width: 100%;
-              background-color: black;
-              color: white;
-              text-align: center;
+          footer {
+            flex-shrink: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
           }
       </style>
-      
- 
-      <div class="footer" id="footer-content">
-      
-      <p>Contact us: <a style="color:white" href="mailto:physiome@physiomeproject.org">
-          physiome@physiomeproject.org</a>.</p>
-      <p>Meet our <a style="color:white" href="{{SITEURL}}/editorial-board">Editorial Board.</a></p>
-      </div>
+  <footer>
+      <a style="display: block; color:white" href="mailto:physiome@physiomeproject.org">Contact us: physiome@physiomeproject.org</a>
+      <a style="color:white; display: block" href="{{SITEURL}}/editorial-board.html">Meet our Editorial Board</a>
+  </footer>
 </html>
