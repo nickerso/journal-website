@@ -13,7 +13,8 @@ Professor Stig Omholt, Representative of VPH Institute Board; Research Director,
 
 Professor Peter Hunter, EiC *Physiome*; Director, Auckland Bioengineering Institute, University of Auckland
 
-Dr Daniel Hook, CEO Digital Science, COO Figshare
+Dr Daniel Hook, Digital Science; Washington University in St Louis, Imperial College London, University of Cambridge
+
 
 ### *Physiome* Editorial Board
 Professor Peter Hunter, EiC; Director, Auckland Bioengineering Institute, University of Auckland
