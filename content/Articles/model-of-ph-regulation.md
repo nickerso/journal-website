@@ -1,6 +1,6 @@
 Slug: 10.6084/m9.figshare.c.3841336
 DOI: 10.6084/m9.figshare.c.3841336
-Title: A model of pH regulation
+Title: The Boron & De Weer Model of Intracellular pH Regulation
 Date: 2017-08-02
 PubAuthors: Safaei, S.
 	Occhipinti, R.
@@ -13,5 +13,4 @@ PrimaryPaperName: Walter F. Boron and Paul De Weer, Intracellular pH transients 
 PrimaryPaperURL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2214912
 FulltextURL: https://doi.org/10.6084/m9.figshare.5267794
 ArchiveURL: https://doi.org/10.6084/m9.figshare.5267797
-Abstract: This is a great article.
-
+Abstract: In the present paper, we re-formulate the models from Boron and De Weer (1976), henceforth referred to as ‘BDW’, and specify the simulation using the Physiome modelling standards CellML (www.cellml.org) and SED-ML (www.sed-ml.org) in order to ensure that the model reproduces the graphs in the original paper. Note that this effort requires the specification of some parameters used in BDW’s simulations, but not described in the BDW paper. The curated and annotated model is made available in a form that users can run with OpenCOR (www.opencor.ws) to understand the model and to explore the effect of changes in parameter values.
