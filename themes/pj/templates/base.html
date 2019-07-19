@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,7 +12,7 @@
     <!--<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">-->
     <!--<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">-->
   </head>
-  <body>
+  <body style="height: 100%; display: flex; flex-direction: column">
     <!-- Top navigation bar -->
       <div class="row">
 	<div class="small-12 columns"></div>
@@ -48,7 +48,7 @@
       </div>
     </div>
     <!-- Body -->
-    <div class="body" style="margin-top:20px">
+    <div class="body" style="margin-top:20px; flex: 1 0 auto">
       <div class="row">
 
 	{% block body %}
@@ -64,23 +64,21 @@
       <!-- Footer with contact info -->
       
       <style>
-          .footer {
-
-              width: 100%;
-              background-color: black;
-              color: white;
-              text-align: center;
+          footer {
+            flex-shrink: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
           }
       </style>
-      
- 
-      <div class="footer" id="footer-content">
-      
+  <footer>
+      <a style="display: block; color:white" href="mailto:physiome@physiomeproject.org">Contact us: physiome@physiomeproject.org</a>
+      <a style="color:white; display: block" href="{{SITEURL}}/editorial-board.html">Meet our Editorial Board</a>
+
       <p>Contact us: <a style="color:white" href="mailto:physiome@physiomeproject.org">
           physiome@physiomeproject.org</a>.</p>
       <p>Meet our <a style="color:white" href="{{SITEURL}}/editorial-board">Editorial Board.</a></p>
       
       <p>These are our collaborators: <a href="https://www.vph-institute.org/"><img src="{{SITEURL}}/theme/images/Horizonal_Online.png" alt="VPH logo" style="width:22%;height:22%;"></a> <a href="http://www.iups.org/"><img src="{{SITEURL}}/theme/images/iups.svg" alt="Physiome logo" style="width:8%;height:8%;"></a> <a href="https://www.auckland.ac.nz/en/abi.html"><img src="{{SITEURL}}/theme/images/ABI_Positive_RGB.jpg" alt="ABI logo" style="width:15%;height:15%;"></a> <a href="https://www.digital-science.com/"><img src="{{SITEURL}}/theme/images/ds-logo-bw.png" alt="Digital Science logo" style="width:15%;height:15%;"></a>   </p>
-      
-      </div>
+  </footer>
 </html>
