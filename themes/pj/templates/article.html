@@ -12,27 +12,29 @@
 	To cite this article, use the DOI: <a href="https://doi.org/{{article.doi}}">{{article.doi}}</a>
 </p>
 {% endif %}
-<p>{% if article.mathsurl %}
-<a class="button" href="{{article.mathsurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/PMR_button.svg" style="width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px"> </a>
-{% endif %}
+<p>
 {% if article.fulltexturl %}
 <a class="button" href="{{article.fulltexturl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/Fulltext_button.svg"> </a>
 {% endif %}
+{% if article.pmrurl %}
+<a class="button" href="{{article.pmrurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/PMR_button.svg" style="width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px"> </a>
+{% endif %}
+
   {% if article.runmodelurl %}
   <a class="button" href="{{article.runmodelurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" ><img src="{{SITEURL}}/theme/images/Run_button.svg"> </a>
 {% endif %}
 </p>
 
-{% if article.primarypaperurl %}
-  <p>This <em>Physiome</em> paper describes data and models from the primary paper: <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></p>
-{% endif %}
-
 {% if article.archiveurl %}
-<p><em>Physiome</em> article <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="1" title="This is a COMBINE archive (Open Modelling Exchange format, OMEX) zip file containing all the resources required to support reproducibility.">archive</span> available at: 
-  <a href="{{article.archiveurl}}" target="_blank">{{article.archiveurl}}</a>
+<p><em>Physiome</em> article <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="1" title="This is the figshare archive containing all the resources required to support reproducibility.">archive</span> available at
+  <a href="{{article.archiveurl}}" target="_blank">{{article.title}}</a>
 </p>
 {% else %}
   <p><em>Article archive not yet available.</em></p>
+{% endif %}
+
+{% if article.primarypaperurl %}
+  <p>This <em>Physiome</em> paper describes models from the primary paper: <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></p>
 {% endif %}
 
 {% if article.abstract %}
