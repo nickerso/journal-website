@@ -9,9 +9,9 @@ PubAuthors: Noble, D.
 	Tasaki, T.
     Afshar, N.
 MathsURL: 
-CodeURL: https://models.physiomeproject.org/workspace/5c6
+PMRURL: https://models.physiomeproject.org/workspace/5c6
 RunModelURL: 
-PrimaryPaperName: A mathematical model of fatigue in skeletal muscle force contraction 2007 Paul R. Shorten, Paul O’Callaghan, John B. Davidson, Tanya K. Soboleva 
+PrimaryPaperName: A mathematical model of fatigue in skeletal muscle force contraction 2007 P.R. Shorten, P. O’Callaghan, J.B. Davidson, T.K. Soboleva 
 PrimaryPaperURL: https://link.springer.com/article/10.1007/s10974-007-9125-6
 FulltextURL: https://physiome.figsh.com/articles/Incorporation_of_sarcolemmal_calcium_transporters_into_the_Shorten_et_al_2007_model_of_skeletal_muscle_equations_coding_and_stability/6720102
 ArchiveURL: https://physiome.figsh.com/articles/Incorporation_of_sarcolemmal_calcium_transporters_into_the_Shorten_et_al_2007_model_of_skeletal_muscle_equations_coding_and_stability/6720102

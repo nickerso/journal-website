@@ -8,9 +8,9 @@ PubAuthors: Pan, M.
 	Tran, K.
 	Crampin, E. J.
 MathsURL: 
-CodeURL: https://models.physiomeproject.org/workspace/579/file/9a50ca6b76253e9dd80fdbd00c457887ff7a7839/Code
+PMRURL: https://models.physiomeproject.org/workspace/579/file/9a50ca6b76253e9dd80fdbd00c457887ff7a7839/Code
 RunModelURL: 
-PrimaryPaperName: The balance between inactivation and activation of the Na+-K+ pump underlies the triphasic accumulation of extracellular K+ during myocardial ischemia. 2007,293 H3036–H3045. Terkildsen, J.R., Crampin, E.J., Smith, N.P.
+PrimaryPaperName: The balance between inactivation and activation of the Na+-K+ pump underlies the triphasic accumulation of extracellular K+ during myocardial ischemia. 2007, J.R. Terkildsen, E.J. Crampin, N.P. Smith 
 PrimaryPaperURL: https://www.ncbi.nlm.nih.gov/pubmed/17873015
 FulltextURL: https://physiome.figsh.com/articles/The_cardiac_Na_K_ATPase_An_updated_thermodynamically_consistent_model/6720386
 ArchiveURL: https://physiome.figsh.com/articles/The_cardiac_Na_K_ATPase_An_updated_thermodynamically_consistent_model/6720386
