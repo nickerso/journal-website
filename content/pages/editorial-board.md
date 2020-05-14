@@ -27,7 +27,7 @@ Dr Anand Rampadarath, Curator, Auckland Bioengineering Institute, University of 
 
 
 ## Physiome Incorporated Society
-Physiome Incorporated is a non-for-profit incorporated society registered in New Zealand and tasked with managing the *Physiome* scientific journal. To become a member of Physiome Incorporated, please contact the secretary Dr David Nickerson, d.nickerson@auckland.ac.nz.
+Physiome Incorporated is a non-for-profit incorporated society registered in New Zealand and tasked with managing the *Physiome* scientific journal. To become a member of Physiome Incorporated, please <a href = "mailto: d.nickerson@auckland.ac.nz">contact the secretary Dr David Nickerson.</a>
 
 ### Physiome Incorporated Executive Committee
 Professor Poul Nielsen, Chair, Auckland Bioengineering Institute, University of Auckland

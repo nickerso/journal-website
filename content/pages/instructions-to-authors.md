@@ -5,7 +5,7 @@ Instructions to Authors
 -----------------------
 
 The purpose of a Physiome article is to provide an open access and citable link between a peer reviewed, published model and its reusable and reproducible implementation. All Physiome articles are open access and available on [figshare](https://physiome.figshare.com/) including the implementation as reported in the article itself. The model files submitted to Physiome must fulfil  [the demands of reusability.](about.html) All submissions to Physiome must also be associated with at least one article accepted by a peer-reviewed journal in the field of physiological modelling (referred to as a Primary Publication). Authors are encouraged to prepare their Physiome submission(s) in parallel to the Primary Publication. Submissions will be curated and evaluated, but not published until the Primary Publication is accepted. 
-Please contact Physiome (physiome@physiomeproject.org) if you have any queries, and if asking about a specific submission, make sure to include the submission identification number.
+Please <a href = "mailto: physiome@physiomeproject.org">contact Physiome</a> if you have any queries, and if asking about a specific submission, make sure to include the submission identification number.
 
 [Physiome Overleaf template](https://www.overleaf.com/read/kxcqgspjgtct)
 
