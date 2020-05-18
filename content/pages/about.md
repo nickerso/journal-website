@@ -16,7 +16,7 @@ Submissions must include sufficient information that independent Physiome curato
 
 
 ### *Physiome* Philosophy
-Scientific research pushes the boundaries of human knowledge, but for knowledge to be useful, reproducibility and reuse must be core values. Reproducibility as confirmation of results should be one of the supporting pillars of good research. Yet, the demonstration and publication of reproducibility is rarely incentivised, and is often treated as a secondary result at best, which undermines the quality of our collective work. With the strict formulation of equations and easily shareable code, one would think that mathematical models should be reproducible by default. However, when tested by the Center for Reproducible Biomedical Modelling, less than 5% of the models published in scientific journals could be implemented by another group. Physiome is a journal committed to reproducibility and reusability of mathematical models of physiological processes. A Physiome publication is a complement to your primary article that ensures reproducibility, reusability and discoverability of your model.
+Scientific research pushes the boundaries of human knowledge, but for knowledge to be useful, reproducibility and reuse must be core values. Reproducibility as confirmation of results should be one of the supporting pillars of good research. Yet, the demonstration and publication of reproducibility is rarely incentivised, and is often treated as a secondary result at best, which undermines the quality of our collective work. With the strict formulation of equations and easily shareable code, one would think that mathematical models should be reproducible by default. However, when tested by the Center for Reproducible Biomedical Modelling, less than 5<span>&hairsp;</span></td></tr>% of the models published in scientific journals could be implemented by another group. Physiome is a journal committed to reproducibility and reusability of mathematical models of physiological processes. A Physiome publication is a complement to your primary article that ensures reproducibility, reusability and discoverability of your model.
 
 Physiome articles describe the details of mathematical models and computational simulations associated with a ‘primary’ experimental/modelling paper that has been published (or accepted for publication) in a peer-reviewed physiology, bioengineering or biophysics journal. Submissions to Physiome are evaluated to determine their reproducibility, reusability, and discoverability. At a minimum, accepted submissions are guaranteed to be in an executable state that reproduces the modelling predictions in the primary paper, and are archived for permanent access by the community.
 
@@ -27,12 +27,12 @@ Physiological modelling typically evolves with a workflow similar to the followi
 <li> formulate a model based on anatomy, physiology, & physics;
 <li> translate the physiology/physics into mathematical equations;
 <li> implement these equations in computational code;
-<li> run the code to produce results;
-<li> compare results with experiments and iterate steps 2-6 until the model matches the experiments (i.e., validate the model); and
-<li> publish the experimental data, the equations, and the results, sometimes with the code provided as supplemental information.
+<li> run the code to produce simulation results and predictions;
+<li> compare predictions with experiments and iterate steps 2-6 until the model matches the experiments (i.e., validate the model); and
+<li> publish the experimental data, the equations, and the predictions, sometimes with the code provided as supplemental information.
 </ol>
 
-Traditionally scientific journals in this domain will publish the experimental data (1) and results (5) without strictly checking that the code (4) really does match the published model (2) or the simulation results (5) (although reviewers may check this if sufficient information is provided). Their focus is typically on the validation and verification (6) of the model.
+Traditionally scientific journals in this domain will publish the experimental data (1) and predictions (5) without strictly checking that the code (4) really does match the published model (2) or the simulation results (5) (although reviewers may check this if sufficient information is provided). Their focus is typically on the validation and verification (6) of the model.
 
 We are now seeing various efforts aiming to address model and simulation reproducibility, see for example the Center for Reproducible Biomedical Modeling. Such efforts focus on ensuring that model implementation (4) and simulation results (5) are consistent and reproducible.
 
