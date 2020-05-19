@@ -2,46 +2,64 @@
 {% import 'shared/pub.html' as pub %}
 {% block title %} {{page.title}} {% endblock %}
 {% block body %}
-		
+
+{{article.kind}}
+
   <h2>{{article.title}}</h2>
 <p>
   {{pub.authorlist(article)}}
 </p>
+
+
+
+<p>
+Published: {{article.publishdate}}, Submitted: {{article.submissiondate}}, Last edited: {{article.lastpublishdate}}
+</p>
+
 {% if article.doi %}
 <p>
-	To cite this article, use the DOI: <a href="https://doi.org/{{article.doi}}">{{article.doi}}</a>
+	To cite this article, use the DOI: <a style="color:#580078" href="https://doi.org/{{article.doi}}">{{article.doi}}</a>
 </p>
 {% endif %}
 <p>
-{% if article.fulltexturl %}
-<a class="button" href="{{article.fulltexturl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/Fulltext_button.svg"> </a>
-{% endif %}
-{% if article.pmrurl %}
-<a class="button" href="{{article.pmrurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/PMR_button.svg" style="width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px"> </a>
-{% endif %}
 
-  {% if article.runmodelurl %}
-  <a class="button" href="{{article.runmodelurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" ><img src="{{SITEURL}}/theme/images/Run_button.svg"> </a>
-{% endif %}
-</p>
 
-{% if article.archiveurl %}
-<p><em>Physiome</em> article <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="1" title="This is the figshare archive containing all the resources required to support reproducibility.">archive</span> available at
-  <a href="{{article.archiveurl}}" target="_blank">{{article.title}}</a>
-</p>
-{% else %}
-  <p><em>Article archive not yet available.</em></p>
-{% endif %}
+<div style = "text-align: left;">
+    
+    <style>
+        .button {
+            border: 1px solid #580078;
+            background-color: #580078;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 16px;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-bottom: 0;
+        }
+    
+        </style>
+    
+    {% if article.fulltexturl %}
+    <a <button href="{{article.fulltexturl}}" class="button">Fulltext</button> </a>
+    {% endif %}
+    
+    {% if article.archiveurl %}
+    <a <button href="{{article.archiveurl}}" class="button">figshare archive</button> </a>
+    {% endif %}
+    
+    {% if article.pmrurl %}
+    <a <button href="{{article.pmrurl}}" class="button">PMR workspace</button> </a>
+    {% endif %}
+    
+</div>
 
-{% if article.primarypaperurl %}
-  <p>This <em>Physiome</em> paper describes models from the primary paper: <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></p>
-{% endif %}
 
 {% if article.abstract %}
 <h3>Abstract</h3>
 <p>{{article.abstract}}</p>
 {% endif %}
-
 
 {% if article.primarypaper %}
   {% endif %}
