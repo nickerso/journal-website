@@ -80,6 +80,12 @@ Published: {{article.publishdate}}, Submitted: {{article.submissiondate}}, Last 
 <p>{{article.abstracttext}}</p>
 {% endif %}
 
+{% if article.pdfid %}
+<h3>Manuscript</h3>
+<center>
+    <iframe src="https://widgets.figsh.com/articles/{{article.pdfid}}/embed?show_title=1" width="768" height="475" allowfullscreen="true" frameborder="0"></iframe>
+</center>
+{% endif %}
 
   {% if article.archivedescription %}
     <div class="claro">
