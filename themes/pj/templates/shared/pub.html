@@ -39,6 +39,9 @@
   {% elif pub.pubauthors %}
     {% for author in pub.pubauthors %} 
       {{author}}
+        {% if pub.pubauthorsorcid %}
+                <a href="https://orcid.org/{{pub.pubauthorsorcid[loop.index0]}}"><img alt="ORCID logo" src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16" hspace="4" /></a>
+        {% endif %}
       {% if not loop.last %}
 	,
       {% endif %}
