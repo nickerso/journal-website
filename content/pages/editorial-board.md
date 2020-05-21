@@ -27,7 +27,7 @@ Dr Anand Rampadarath, Curator, Auckland Bioengineering Institute, University of 
 
 
 ## Physiome Incorporated Society
-Physiome Incorporated is a non-for-profit incorporated society registered in New Zealand and tasked with managing the *Physiome* scientific journal. To become a member of Physiome Incorporated, please <a href = "mailto:d.nickerson@auckland.ac.nz?subject=Enquiry regarding membership of the Physiome Incorporated Society">contact the secretary Dr David Nickerson.</a>
+Physiome Incorporated is a non-for-profit incorporated society registered in New Zealand and tasked with managing the *Physiome* scientific journal. To become a member of Physiome Incorporated, please <a href = "mailto:d.nickerson@auckland.ac.nz?subject=Enquiry regarding membership of the Physiome Incorporated Society">contact the secretary Dr David Nickerson</a>.
 
 ### Physiome Incorporated Executive Committee
 Professor Poul Nielsen, Chair, Auckland Bioengineering Institute, University of Auckland
@@ -68,6 +68,6 @@ Dr Anand Rampadarath, Curator *Physiome*, Auckland Bioengineering Institute, Uni
 
 Tommy Yu, Physiome Model Repository; Auckland Bioengineering Institute, University of Auckland
 
-Dr Alan Garny, OpenCor developer; Auckland Bioengineering Institute, University of Auckland
+Dr Alan Garny, [OpenCOR](https://opencor.ws/) project manager and lead developer; Auckland Bioengineering Institute, University of Auckland
 
 Dr Richard Christie, Auckland Bioengineering Institute, University of Auckland
