@@ -130,7 +130,7 @@ This list details the curators' presence in various popular repositories. If you
 <li>Is your model presented in a standardised format (if possible)? </li>
 <li>Have you specified the provenance of your model and parameter values?</li>
 <li>Does the model have appropriate modularity and annotation (if possible)?</li>
-<li>Is your manuscript written in the [*Physiome* Overleaf template](https://www.overleaf.com/read/kxcqgspjgtct)?</li>
+<li>Is your manuscript written in the <a href="https://www.overleaf.com/read/kxcqgspjgtct"><i>Physiome</i> Overleaf template</a>?</li>
 <li>Are all graphs and axes labeled in your figures, and is the text in your figures in a large enough font size to be easily read?</li>
 <li>Have you shown that the model obeys physical laws such as conservation of energy and conservation of mass or charge?</li>
 </ul>
@@ -138,6 +138,8 @@ This list details the curators' presence in various popular repositories. If you
 
 ### 5. Curation
 The *Physiome* curators will check the reproducibility of your model by running the model implementation provided in the submission and compare the results to the primary paper as stated through the reproducibility goals specified in the *Physiome* manuscript. If the model can not reproduce the results, or if there are any other problems with running the files, the curator will contact the submitting author with their concerns. In cases where the model or simulation implementation could be encoded in one of the *Physiome* standards, the curators will help provide the author with information about how this could be done (including direct assistance if resource permits).
+
+*Physiome* collaborates with the [Center for Reproducible Biomedical Modeling](http://reproduciblebiomodels.org), and they will produce a reproducibility report for every *Physiome* article, detailing different aspects of the model's reproducibility. The report will be attached at the end of the manuscript.
 
 ### 6. Cost
 *Physiome* articles are curated and published as open access with a DOI citable as a journal article, with an author processing charge of US$300. The fee is to be paid after acceptance of the submission, but before publication.
