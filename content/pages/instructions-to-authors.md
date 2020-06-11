@@ -4,14 +4,16 @@ Slug: instructions-to-authors
 Instructions to Authors
 -----------------------
 
-The purpose of a *Physiome* article is to provide an open access and citable link between a peer reviewed, published model and its reusable and reproducible implementation. All *Physiome* articles are open access and available on [figshare](https://physiome.figshare.com/) including the implementation as reported in the article itself. The model files submitted to *Physiome* must fulfil  [the demands of reusability.](about.html) All submissions to *Physiome* must also be associated with at least one article accepted by a peer-reviewed journal in the field of physiological modelling (referred to as a Primary Publication). Authors are encouraged to prepare their *Physiome* submission(s) in parallel to the Primary Publication. Submissions will be curated and evaluated, but not published until the Primary Publication is accepted. 
-Please <a href = "mailto:physiome@physiomeproject.org">contact *Physiome*</a> if you have any queries, and if asking about a specific submission, make sure to include the submission identification number.
+The purpose of a *Physiome* article is to provide an open access and citable link between a peer reviewed, published model and its reusable and reproducible implementation. All *Physiome* articles are open access and available on <a style="color:#580078" href="https://physiome.figshare.com/">figshare</a> including the implementation as reported in the article itself. The model files submitted to *Physiome* must fulfil <a style="color:#580078" href="{{SITEURL}}/about.html">the demands of reusability.</a> All submissions to *Physiome* must also be associated with at least one article accepted by a peer-reviewed journal in the field of physiological modelling (referred to as a Primary Publication). Authors are encouraged to prepare their *Physiome* submission(s) in parallel to the Primary Publication. Submissions will be curated and evaluated, but not published until the Primary Publication is accepted. 
+Please <a style="color:#580078" href = "mailto:physiome@physiomeproject.org">contact *Physiome*</a> if you have any queries, and if asking about a specific submission, make sure to include the submission identification number.
 
-[*Physiome* Overleaf template](https://www.overleaf.com/read/kxcqgspjgtct)
+ <div style = "text-align: center;">
 
+<a <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="https://www.overleaf.com/read/kxcqgspjgtct" class="button">*Physiome* Overleaf template</button> </a>
 
-<a <button href="testing.html" class="button">*Physiome* submission system</button> </a>
+<a <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="testing.html" class="button">*Physiome* submission system</button> </a>
 
+  </div>
 
 ### 1. Primary Publication
 Every *Physiome* original or retrospective article needs to be associated with one or more Primary Publications. The Primary Publication is an experimental/modelling paper describing the model(s), that has been accepted to a peer-reviewed journal in the field of physiological modelling. The Primary Publication shows that the model is validated by describing the experiments and data, and the model(s) fit to the data, as well as the biological background and why the model is important. *Physiome* articles focus on reproducibility and reuse, but do not deal with the validation or scientific relevance of the models, as this is already reviewed in the Primary Paper.
@@ -19,7 +21,7 @@ Every *Physiome* original or retrospective article needs to be associated with o
 
 ### 2. Types of submissions
 
-The following types of submissions will be considered for publication in *Physiome*. [Here you can find templates and examples for the different types of submissions.](articles.html) 
+The following types of submissions will be considered for publication in *Physiome*. <a style="color:#580078" href="{{SITEURL}}/articles.html">Here you can find templates and examples for the different types of submissions.</a> 
 
 * **2.1 Original submission**
 
@@ -47,7 +49,7 @@ Every Original or Retrospective submission in *Physiome* must be associated with
 
 A *Physiome* article consists of a description and the code of a reproducible implementation of the model. Such resources can be directly included in the zip archive submitted to *Physiome*, or linked to via appropriate online repositories or databases. A list of the databases used by *Physiome* can be found under "Submission". While there are many different types of models, file types and structures used by modelers, there are some items which are common to all *Physiome* submissions. These are:
 
-A manuscript, which should be prepared using the [*Physiome* Overleaf template](https://www.overleaf.com/read/kxcqgspjgtct) and submitted as the downloaded source. The manuscript must include i) a summary of the background, purpose and modifications of the model, ii) all instructions needed to run the implemented files, and, iii) clearly stated reproducibility goals that overlap with the results shown in the Primary Publication.
+A manuscript, which should be prepared using the <a style="color:#580078" href="https://www.overleaf.com/read/kxcqgspjgtct">*Physiome* Overleaf template</a> and submitted as the downloaded source. The manuscript must include i) a summary of the background, purpose and modifications of the model, ii) all instructions needed to run the implemented files, and, iii) clearly stated reproducibility goals that overlap with the results shown in the Primary Publication.
 
 Source codes for the model implementation, either as procedural languages (e.g., Matlab, C, Python) or declarative languages (e.g., CellML, SBML, SED-ML). Instructions on how to run them in order to reproduce the results must be presented in the *Physiome* manuscript. If possible, show that the model obeys physical laws such as conservation of energy and conservation of mass or charge. This could be done for example by implementing it in bond graph form or formulate it as a port-Hamiltonian system and implement it numerically in a mass and energy conserving form. 
 
@@ -88,30 +90,34 @@ These sections are not required, but may be added before the list of references.
  *Figures:*
 <ul>
 <li> **Make sure that the graphs presented in the reproducibility goals in the manuscript are the same as the ones produced by your submitted code.** 
-<li>Use good quality images, do not use screen captions. Recommended image formats are .pdf for plots, graphs, and diagrams, and .jpg for photographic images. Maximum image size is 1MB. <li><a href="https://www.overleaf.com/help/336-my-image-files-are-very-large">Here is some help if you have very large images.</a> </li>
+<li>Use good quality images, do not use screen captions. Recommended image formats are .pdf for plots, graphs, and diagrams, and .jpg for photographic images. Maximum image size is 1MB. <li><a style="color:#580078" href="https://www.overleaf.com/help/336-my-image-files-are-very-large">Here is some help if you have very large images.</a> </li>
 <li>Use a sans serif font for text in the figures (for example Roboto or Open Sans). Make sure that the font size is large enough for the text to be read once the image is inserted in the template (at least 10pt in the final image sizein the manuscript). This includes all numbers and labels on axes. 
 <li>Label subplots in the upper left corner using capital letters, and order the subplots from left to right and top to bottom. Label all axes and specify which units are used. Include a legend if the graph has multiple curves in the same plot. If you want to point out specific features of a graph, use inserts or arrows rather than incomplete representations of the graph. 
- <li><a href="https://www.overleaf.com/learn/latex/Inserting_Images">General advice for how to handle images in overleaf can be found here.</a> </li>   
+ <li><a style="color:#580078" href="https://www.overleaf.com/learn/latex/Inserting_Images">General advice for how to handle images in overleaf can be found here.</a> </li>   
 </ul>
 
 
 ### 4. Submission
 Submissions to *Physiome* can be made through our submission system:
 
-<a <button href="testing.html" class="button">*Physiome* submission system</button> </a>
+ <div style = "text-align: center;">
+ 
+<a <button type="button" style="background-color: #580078; color:white; border: 1px solid #580078;" href="testing.html" class="button">*Physiome* submission system</button> </a>
 
-An [ORCiD](https://orcid.org/) is required to log in. If the submitter and the corresponding author are different individuals, please make sure that the verified email is tied to the submitter.  
+  </div>
 
-All accepted submissions will be published open access on [figshare.](https://physiome.figshare.com/) 
+An <a style="color:#580078" href="https://orcid.org/">ORCiD</a> is required to log in. If the submitter and the corresponding author are different individuals, please make sure that the verified email is tied to the submitter.  
 
-Submissions can be made by linking to an open access, permanent, and version control repository, or by sending the files directly through the submission system. If you use a repository, make sure that our curators have access to the version of the workspace that was current at the time of your submission to *Physiome*. The Physiome Project has an associated repository for this purpose, the [Physiome Model Repository (PMR)](https://models.physiomeproject.org), which we encourage authors to use. Upon receipt of a submission which is not already linked to the PMR, curators will create a private PMR workspace for the submission – a version controlled repository within PMR. When a *Physiome* submission consists of models or data already in PMR, then that will be linked to this submission workspace internally to PMR. 
+All accepted submissions will be published open access on <a style="color:#580078" href="https://physiome.figshare.com/">figshare.</a> 
+
+Submissions can be made by linking to an open access, permanent, and version control repository, or by sending the files directly through the submission system. If you use a repository, make sure that our curators have access to the version of the workspace that was current at the time of your submission to *Physiome*. The Physiome Project has an associated repository for this purpose, the <a style="color:#580078" href="https://models.physiomeproject.org">Physiome Model Repository (PMR)</a>, which we encourage authors to use. Upon receipt of a submission which is not already linked to the PMR, curators will create a private PMR workspace for the submission – a version controlled repository within PMR. When a *Physiome* submission consists of models or data already in PMR, then that will be linked to this submission workspace internally to PMR. 
 
 This list details the curators' presence in various popular repositories. If you submit from any of these, make sure to give our curator access to your workspace in the repository.
 
 <ul>
-<li><a href="https://models.physiomeproject.org">Physiome Model Repository (PMR)</a> Username: PhysiomeCurators</li>
-<li><a href="https://github.com/">GitHub</a> Username: PhysiomeCurators</li>
-<li><a href="https://bitbucket.org/">Bitbucket</a> Username: PhysiomeCurators</li>
+<li><a style="color:#580078" href="https://models.physiomeproject.org">Physiome Model Repository (PMR)</a> Username: PhysiomeCurators</li>
+<li><a style="color:#580078" href="https://github.com/">GitHub</a> Username: PhysiomeCurators</li>
+<li><a style="color:#580078" href="https://bitbucket.org/">Bitbucket</a> Username: PhysiomeCurators</li>
 <li>Figshare
 <li>Biomodels
 <li>Google Drive
@@ -130,7 +136,7 @@ This list details the curators' presence in various popular repositories. If you
 <li>Is your model presented in a standardised format (if possible)? </li>
 <li>Have you specified the provenance of your model and parameter values?</li>
 <li>Does the model have appropriate modularity and annotation (if possible)?</li>
-<li>Is your manuscript written in the <a href="https://www.overleaf.com/read/kxcqgspjgtct"><i>Physiome</i> Overleaf template</a>?</li>
+<li>Is your manuscript written in the <a style="color:#580078" href="https://www.overleaf.com/read/kxcqgspjgtct"><i>Physiome</i> Overleaf template</a>?</li>
 <li>Are all graphs and axes labeled in your figures, and is the text in your figures in a large enough font size to be easily read?</li>
 <li>Have you shown that the model obeys physical laws such as conservation of energy and conservation of mass or charge?</li>
 </ul>
@@ -139,7 +145,7 @@ This list details the curators' presence in various popular repositories. If you
 ### 5. Curation
 The *Physiome* curators will check the reproducibility of your model by running the model implementation provided in the submission and compare the results to the primary paper as stated through the reproducibility goals specified in the *Physiome* manuscript. If the model can not reproduce the results, or if there are any other problems with running the files, the curator will contact the submitting author with their concerns. In cases where the model or simulation implementation could be encoded in one of the *Physiome* standards, the curators will help provide the author with information about how this could be done (including direct assistance if resource permits).
 
-*Physiome* collaborates with the [Center for Reproducible Biomedical Modeling](http://reproduciblebiomodels.org), and they will produce a reproducibility report for every *Physiome* article, detailing different aspects of the model's reproducibility. The report will be attached at the end of the manuscript.
+*Physiome* will collaborate with the <a style="color:#580078" href="http://reproduciblebiomodels.org">Center for Reproducible Biomedical Modeling</a>, to produce a reproducibility report for every *Physiome* article. This report will detail the different aspects of the model’s reproducibility and repeatability and will be attached at the end of the finalized manuscript.
 
 ### 6. Cost
 *Physiome* articles are curated and published as open access with a DOI citable as a journal article, with an author processing charge of US$300. The fee is to be paid after acceptance of the submission, but before publication.
@@ -148,7 +154,7 @@ The *Physiome* curators will check the reproducibility of your model by running 
 ### 7. Copyright of submission
 *Physiome* supports open science and the idea that authors should retain the rights to their own works. Therefore, our copyright policy is the following:
 
-(a) The authors grant to the *Physiome* the right to publish and communicate Works to the public in electronic form under one of the following [Creative Commons licenses.](https://creativecommons.org/licenses/by/4.0/legalcode)
+(a) The authors grant to the *Physiome* the right to publish and communicate Works to the public in electronic form under one of the following <a style="color:#580078" href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons licenses.</a>
 
 (b) The authors retain copyright in the Works and the right to re-use the Works after publication.
 

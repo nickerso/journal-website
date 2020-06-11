@@ -8,13 +8,10 @@
   </td>
   <td class="medium-5 columns">
     {% if pub_article.fulltexturl %}
-    <span><a class="button" href="{{pub_article.fulltexturl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/Fulltext_button.svg"> </a></span>
+    <span><a <button href="{{pub_article.fulltexturl}}" class="button">Fulltext</button> </a></span>
     {% endif %}
-    {% if pub_article.codeurl %}
-    <span><a class="button" href="{{pub_article.codeurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/PMR_button.svg"> </a></span>
-    {% endif %}
-    {% if pub_article.runmodelurl %}
-    <span><a class="button" href="{{pub_article.runmodelurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" ><img src="{{SITEURL}}/theme/images/Run_button.svg"> </a></span>
+    {% if pub_article.archiveurl %}
+    <span><a <button href="{{article.archiveurl}}" class="button">figshare archive</button> </a></span>
     {% endif %}
 
   </td>
