@@ -9,7 +9,7 @@ Please <a style="color:#580078" href = "mailto:physiome@physiomeproject.org">con
 
  <div style = "text-align: center;">
 
-<a <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="https://www.overleaf.com/read/kxcqgspjgtct" class="button">*Physiome* Overleaf template</button> </a>
+<a <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="https://www.overleaf.com/latex/templates/physiome-journal-article-template/kfbqwxxmtsfv" class="button">*Physiome* Overleaf template</button> </a>
 
 <a <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="testing.html" class="button">*Physiome* submission system</button> </a>
 
@@ -49,7 +49,7 @@ Every Original or Retrospective submission in *Physiome* must be associated with
 
 A *Physiome* article consists of a description and the code of a reproducible implementation of the model. Such resources can be directly included in the zip archive submitted to *Physiome*, or linked to via appropriate online repositories or databases. A list of the databases used by *Physiome* can be found under "Submission". While there are many different types of models, file types and structures used by modelers, there are some items which are common to all *Physiome* submissions. These are:
 
-A manuscript, which should be prepared using the <a style="color:#580078" href="https://www.overleaf.com/read/kxcqgspjgtct">*Physiome* Overleaf template</a> and submitted as the downloaded source. The manuscript must include i) a summary of the background, purpose and modifications of the model, ii) all instructions needed to run the implemented files, and, iii) clearly stated reproducibility goals that overlap with the results shown in the Primary Publication.
+A manuscript, which should be prepared using the <a style="color:#580078" href="https://www.overleaf.com/latex/templates/physiome-journal-article-template/kfbqwxxmtsfv">*Physiome* Overleaf template</a> and submitted as the downloaded source. The manuscript must include i) a summary of the background, purpose and modifications of the model, ii) all instructions needed to run the implemented files, and, iii) clearly stated reproducibility goals that overlap with the results shown in the Primary Publication.
 
 Source codes for the model implementation, either as procedural languages (e.g., Matlab, C, Python) or declarative languages (e.g., CellML, SBML, SED-ML). Instructions on how to run them in order to reproduce the results must be presented in the *Physiome* manuscript. If possible, show that the model obeys physical laws such as conservation of energy and conservation of mass or charge. This could be done for example by implementing it in bond graph form or formulate it as a port-Hamiltonian system and implement it numerically in a mass and energy conserving form. 
 
@@ -118,6 +118,9 @@ This list details the curators' presence in various popular repositories. If you
 <li><a style="color:#580078" href="https://models.physiomeproject.org">Physiome Model Repository (PMR)</a> Username: PhysiomeCurators</li>
 <li><a style="color:#580078" href="https://github.com/">GitHub</a> Username: PhysiomeCurators</li>
 <li><a style="color:#580078" href="https://bitbucket.org/">Bitbucket</a> Username: PhysiomeCurators</li>
+<li><a style="color:#580078" href="https://www.ebi.ac.uk/biomodels/">BioModels</a> Username: PhysiomeCurators</li>
+<li><a style="color:#580078" href="https://figshare.com/">figshare</a> Username: Curators Physiome</li>
+<li><a style="color:#580078" href="https://drive.google.com/">Google Drive</a> Username: PhysiomeCurators@gmail.com (Note: this email is not monitored, use only for sharing Google drive.)</li> 
 </ul>
 
 
@@ -133,7 +136,7 @@ This list details the curators' presence in various popular repositories. If you
 <li>Is your model presented in a standardised format (if possible)? </li>
 <li>Have you specified the provenance of your model and parameter values?</li>
 <li>Does the model have appropriate modularity and annotation (if possible)?</li>
-<li>Is your manuscript written in the <a style="color:#580078" href="https://www.overleaf.com/read/kxcqgspjgtct"><i>Physiome</i> Overleaf template</a>?</li>
+<li>Is your manuscript written in the <a style="color:#580078" href="https://www.overleaf.com/latex/templates/physiome-journal-article-template/kfbqwxxmtsfv"><i>Physiome</i> Overleaf template</a>?</li>
 <li>Are all graphs and axes labeled in your figures, and is the text in your figures in a large enough font size to be easily read?</li>
 <li>Have you shown that the model obeys physical laws such as conservation of energy and conservation of mass or charge?</li>
 </ul>
