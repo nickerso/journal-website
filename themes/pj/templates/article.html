@@ -33,17 +33,25 @@
 <br>
 <br>
 
-<div class="content">
   <h3>{{article.title}}</h3>
 <p style='font-size: 1.2em;'>
   <i>{{pub.authorlist(article)}}</i>
 </p>
-</div>
+
+{% if article.primarypaperurl %}
+    <b>Primary Publication:</b> <a style="color:#580078" href="https://doi.org/{{article.primarypaperurl}}">{{article.primarypapername}}</a>
+{% else %}
+    <b>Primary Publication:</b> {{article.primarypapername}}
+{% endif %}
+
+<br>
+<br>
 
 {% if article.doi %}
 <p style="background-color:#E0E0E0;">
-To cite this article, use the DOI: <a style="color:#580078" href="https://doi.org/{{article.doi}}">{{article.doi}}</a> <br>
-All <i>Physiome</i> articles are published as a collection containing the manuscript as a pdf file and the model implementation as an <a style="color:#580078" href="http://co.mbine.org/standards/omex">omex file</a>. When citing a <i>Physiome</i> article, the whole collection should be cited.
+
+All <i>Physiome</i> articles are published as a collection containing the manuscript as a pdf file and the model implementation as an <a style="color:#580078" href="http://co.mbine.org/standards/omex">omex file</a>. <br>
+To cite this <i>Physiome</i> article, cite the whole collection at the DOI: <a style="color:#580078" href="https://doi.org/{{article.doi}}">{{article.doi}}</a>, and the Primary Publication at the DOI: <a style="color:#580078" href="https://doi.org/{{article.primarypaperurl}}">{{article.primarypaperurl}}</a>.
 </p>
 {% endif %}
 
