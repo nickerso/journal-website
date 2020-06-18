@@ -21,7 +21,7 @@ Every *Physiome* original or retrospective article needs to be associated with o
 
 ### 2. Types of submissions
 
-The following types of submissions will be considered for publication in *Physiome*. <a style="color:#580078" href="{{SITEURL}}/articles.html">Here you can find templates and examples for the different types of submissions.</a> 
+The following types of submissions will be considered for publication in *Physiome*. 
 
 * **2.1 Original submission**
 
@@ -118,9 +118,6 @@ This list details the curators' presence in various popular repositories. If you
 <li><a style="color:#580078" href="https://models.physiomeproject.org">Physiome Model Repository (PMR)</a> Username: PhysiomeCurators</li>
 <li><a style="color:#580078" href="https://github.com/">GitHub</a> Username: PhysiomeCurators</li>
 <li><a style="color:#580078" href="https://bitbucket.org/">Bitbucket</a> Username: PhysiomeCurators</li>
-<li>Figshare
-<li>Biomodels
-<li>Google Drive
 </ul>
 
 
