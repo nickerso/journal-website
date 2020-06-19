@@ -74,13 +74,8 @@ To cite this <i>Physiome</i> article, cite the whole collection at the DOI: <a s
   {% else %}
   {% endif %}
 
-{% if article.abstracttext %}
-<h3>Abstract</h3>
-<p>{{article.abstracttext}}</p>
-{% endif %}
 
 {% if article.pdfid %}
-<h3>Manuscript</h3>
 <center>
     <iframe src="https://widgets.figsh.com/articles/{{article.pdfid}}/embed?show_title=1" width="768" height="475" allowfullscreen="true" frameborder="0"></iframe>
 </center>
