@@ -67,7 +67,7 @@ Source codes for the model implementation, either as procedural languages (e.g.,
 #### **The following sections should be included in the manuscript:**
 
 *Introduction:* 
-A brief explanation of the biological system modelled. Make sure to define the biological entities present, as well as referencing the data and species used in the primary papers. Clearly reference previously published iterations of the model (to establish provenance), and any data that has been used for validation.
+A brief explanation of the biological system modelled. Make sure to define the biological entities present, as well as referencing the species used in the primary papers. Clearly reference previously published iterations of the model to establish provenance, and any data that has been used for validation.
 
 *Model Description:*
 An overview of the type of model and its structure. As the model code submitted should be complete, all parameter values, units, etc will be included in the files and are not required to be printed in the article. 
