@@ -89,11 +89,11 @@ These sections are not required, but may be added before the list of references.
 
  *Figures:*
 <ul>
-<li> **Make sure that the graphs presented in the reproducibility goals in the manuscript are the same as the ones produced by your submitted code.** 
-<li>Use good quality images, do not use screen captions. Recommended image formats are .pdf for plots, graphs, and diagrams, and .jpg for photographic images. Maximum image size is 1MB. <li><a style="color:#580078" href="https://www.overleaf.com/help/336-my-image-files-are-very-large">Here is some help if you have very large images.</a> </li>
-<li>Use a sans serif font for text in the figures (for example Roboto or Open Sans). Make sure that the font size is large enough for the text to be read once the image is inserted in the template (at least 10pt in the final image sizein the manuscript). This includes all numbers and labels on axes. 
-<li>Label subplots in the upper left corner using capital letters, and order the subplots from left to right and top to bottom. Label all axes and specify which units are used. Include a legend if the graph has multiple curves in the same plot. If you want to point out specific features of a graph, use inserts or arrows rather than incomplete representations of the graph. 
- <li><a style="color:#580078" href="https://www.overleaf.com/learn/latex/Inserting_Images">General advice for how to handle images in overleaf can be found here.</a> </li>   
+<li> **Make sure that the graphs presented in the reproducibility goals in the manuscript are the same as the ones produced by your submitted code.** </li>
+<li>Use good quality images, do not use screen captions. Recommended image formats are .pdf for plots, graphs, and diagrams, and .jpg for photographic images. <a style="color:#580078" href="https://www.overleaf.com/learn/latex/Inserting_Images">General advice for how to handle images in overleaf can be found here.</a> Maximum image size is 1MB (<a style="color:#580078" href="https://www.overleaf.com/help/336-my-image-files-are-very-large">here is some help if you have very large images.</a> )</li>
+<li>Use a sans serif font for text in the figures (for example Roboto or Open Sans). Make sure that the font size is large enough for the text to be read once the image is inserted in the template (at least 10pt in the final image sizein the manuscript). This includes all numbers and labels on axes. </li>
+<li>Label subplots in the upper left corner using capital letters, and order the subplots from left to right and top to bottom. Label all axes and specify which units are used. </li>
+<li>Include a legend if the graph has multiple curves in the same plot. If you want to point out specific features of a graph, use inserts or arrows rather than incomplete representations of the graph. </li> 
 </ul>
 
 
