@@ -2,44 +2,63 @@
 {% import 'shared/pub.html' as pub %}
 {% block title %} {{page.title}} {% endblock %}
 {% block body %}
-		
-  <h2>{{article.title}}</h2>
-<p>
-  {{pub.authorlist(article)}}
-</p>
-{% if article.doi %}
-<p>
-	To cite this article, use the DOI: <a href="https://doi.org/{{article.doi}}">{{article.doi}}</a>
-</p>
-{% endif %}
-<p>{% if article.mathsurl %}
-<a class="button" href="{{article.mathsurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/PMR_button.svg" style="width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0px"> </a>
-{% endif %}
-{% if article.fulltexturl %}
-<a class="button" href="{{article.fulltexturl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/Fulltext_button.svg"> </a>
-{% endif %}
-  {% if article.runmodelurl %}
-  <a class="button" href="{{article.runmodelurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" ><img src="{{SITEURL}}/theme/images/Run_button.svg"> </a>
-{% endif %}
+<head>
+<style>
+
+/* Header/Logo Title */
+.header {font-size: 0.8em;}
+
+/* Page Content */
+.content {}
+</style>
+</head>
+
+<div class="header">
+
+<div style='float: left;'>
+  Open Access<br>
+  Reproducible Model<br>
+  {{article.kind}}
+</div>
+
+<div style='float: right; text-align: right'>
+  <p>Published: {{article.publishdate}}<br>
+  {% if article.lastpublishdate %}
+  Last edited: {{article.lastpublishdate}}</p>
+  {% endif %}
+</div>
+</div>
+
+<br>
+<br>
+<br>
+
+  <h3>{{article.title}}</h3>
+<p style='font-size: 1.2em;'>
+  <i>{{pub.authorlist(article)}}</i>
 </p>
 
 {% if article.primarypaperurl %}
-  <p>This <em>Physiome</em> paper describes data and models from the primary paper: <a rel="noopener" target="_blank" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a></p>
-{% endif %}
-
-{% if article.archiveurl %}
-<p><em>Physiome</em> article <span data-tooltip aria-haspopup="true" class="has-tip top" data-disable-hover="false" tabindex="1" title="This is a COMBINE archive (Open Modelling Exchange format, OMEX) zip file containing all the resources required to support reproducibility.">archive</span> available at: 
-  <a href="{{article.archiveurl}}" target="_blank">{{article.archiveurl}}</a>
-</p>
+    <b>Primary Publication:</b> <a style="color:#580078" href="https://doi.org/{{article.primarypaperurl}}">{{article.primarypapername}}</a>
 {% else %}
-  <p><em>Article archive not yet available.</em></p>
+    <b>Primary Publication:</b> {{article.primarypapername}}
 {% endif %}
 
+<br>
+<br>
+
+{% if article.doi %}
+<p style="background-color:#E0E0E0;">
+
+All <i>Physiome</i> articles are published as a collection containing the manuscript as a pdf file and the model implementation as an <a style="color:#580078" href="http://co.mbine.org/standards/omex">omex file</a>. <br>
+<b>To cite this <i>Physiome</i> article, cite the whole collection at the DOI: <a style="color:#580078" href="{{article.archiveurl}}">{{article.doi}}</a></b>, and the Primary Publication at the DOI: <a style="color:#580078" href="https://doi.org/{{article.primarypaperurl}}">{{article.primarypaperurl}}</a>.
+</p>
+{% endif %}
+
+<p>
 {% if article.abstract %}
-<h3>Abstract</h3>
-<p>{{article.abstract}}</p>
+<b>Abstract:</b> {{article.abstract}}</p>
 {% endif %}
-
 
 {% if article.primarypaper %}
   {% endif %}
@@ -55,11 +74,12 @@
   {% else %}
   {% endif %}
 
-{% if article.abstracttext %}
-<h3>Abstract</h3>
-<p>{{article.abstracttext}}</p>
-{% endif %}
 
+{% if article.pdfid %}
+<center>
+    <iframe src="https://widgets.figsh.com/articles/{{article.pdfid}}/embed?show_title=1" width="768" height="475" allowfullscreen="true" frameborder="0"></iframe>
+</center>
+{% endif %}
 
   {% if article.archivedescription %}
     <div class="claro">
