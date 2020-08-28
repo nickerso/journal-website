@@ -1,22 +1,11 @@
 {% macro publisting(pub_article) %}
+
 <tr>
   <td class="medium-7 columns">
     <p style="margin-bottom:0px"><a href="{{SITEURL}}/{{pub_article.url}}">{{pub_article.title}}</a></p>
     <p>
       {{authorlist(pub_article)}}
     </p>
-  </td>
-  <td class="medium-5 columns">
-    {% if pub_article.fulltexturl %}
-    <span><a class="button" href="{{pub_article.fulltexturl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/Fulltext_button.svg"> </a></span>
-    {% endif %}
-    {% if pub_article.codeurl %}
-    <span><a class="button" href="{{pub_article.codeurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" rel="noopener" target="_blank" ><img src="{{SITEURL}}/theme/images/PMR_button.svg"> </a></span>
-    {% endif %}
-    {% if pub_article.runmodelurl %}
-    <span><a class="button" href="{{pub_article.runmodelurl}}" style="width: 140px; height: 40px; background-color: #e7e7e7; border: 2px solid #e7e7e7; padding: 0px; margin: 0px; border: 0px" ><img src="{{SITEURL}}/theme/images/Run_button.svg"> </a></span>
-    {% endif %}
-
   </td>
 </tr>
 {% endmacro %}
@@ -33,16 +22,23 @@
 
 {% endmacro %}
 
+
 {% macro authorlist(pub) %}
   {% if pub.pubauthor %}
     {{pub.pubauthor}}
   {% elif pub.pubauthors %}
     {% for author in pub.pubauthors %} 
       {{author}}
-      {% if not loop.last %}
-	,
+        {% if pub.pubauthorsorcid %}
+            {% if (pub.pubauthorsorcid[loop.index0])|length > 8 %}
+                <a href="https://orcid.org/{{pub.pubauthorsorcid[loop.index0]}}"><img class="b" alt="ORCID logo" src="https://orcid.org/sites/default/files/images/orcid_16x16.png" width="16" height="16" /></a>
+            {% endif %}
+        {% endif %}
+        {% if not loop.last %}
+      ,
       {% endif %}
     {% endfor %}
   {% else %}
   {% endif %}
 {% endmacro %}
+
