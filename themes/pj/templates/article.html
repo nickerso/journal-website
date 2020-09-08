@@ -58,7 +58,7 @@
       height: auto;
     }
         </style>
-    <a> <button href="{{article.archiveurl}}" class="button" <img src="{{SITEURL}}/theme/images/Physiome-under.png">View publication</button> </a>
+    <button> <a href="{{article.archiveurl}}" class="button" ><img src="{{SITEURL}}/theme/images/Physiome-under.png"><br><br>View publication</a></button>
 </div>
 
     <br>
@@ -66,7 +66,7 @@
     {% if article.doi %}
     <p style="background-color:#E0E0E0;">
 
-    <b>To cite this <i>Physiome</i> article, cite the whole collection at the DOI: <a style="color:#580078" href="http://doi.org/{{article.doi}}">{{article.doi}}</a>, and the Primary Publication at the DOI: <a style="color:#580078" href="{{article.primarypaperurl}}">{{article.primarypaperurl}}</a>.</b> <br>
+    <b>To cite this <i>Physiome</i> article, cite the whole collection at the DOI: <a style="color:#580078" href="https://doi.org/{{article.doi}}">{{article.doi}}</a>, and the Primary Publication at the DOI: <a style="color:#580078" href="{{article.primarypaperurl}}">{{article.primarypaperurl}}</a>.</b> <br>
     All <i>Physiome</i> articles are published as a collection containing the manuscript as a pdf file and the model implementation as an <a style="color:#580078" href="http://co.mbine.org/standards/omex">omex file</a> (which can be opened with any standard type of zip reader).
     </p>
     {% endif %}
@@ -101,6 +101,8 @@
   {% else %}
   {% endif %}
 
+<br>
+<br>
 
 {% if article.pdfid %}
 <center>
