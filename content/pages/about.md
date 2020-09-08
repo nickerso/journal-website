@@ -3,7 +3,7 @@ Slug: about
        
 About the Journal
 -----------------
-Meet our <a style="color:#580078" href="{{SITEURL}}/editorial-board.html">Editorial Board.</a></p>
+Meet our <a style="color:#580078" href="https://journal.physiomeproject.org/editorial-board.html">Editorial Board.</a></p>
 
 
 ### Scope
@@ -52,7 +52,7 @@ Ideally all models would reach level 4, but we realise that this is unrealistic,
 
 A model simulation is **repeatable** when re-running it produces a consistent result. 
 
-A model is **reproducible** when its outputs can be reproduced by a machine from an unambiguous statement of the model equations, together with specified values of the model parameters, initial conditions and boundary conditions. Markup languages such as<a style="color:#580078" href="https://www.cellml.org/">CellML</a>, <a style="color:#580078" href="http://sbml.org/">SBML</a>, <a style="color:#580078" href="https://www.neuroml.org/">NeuroML</a> and <a style="color:#580078" href="http://www.fieldml.org/">FieldML</a> are designed to encode a model in unambiguous form. The markup language <a style="color:#580078" href="http://sed-ml.org/">SED-ML</a> is designed to specify the simulation protocol for running the model with specified inputs and outputs.
+A model is **reproducible** when its outputs can be reproduced by a machine from an unambiguous statement of the model equations, together with specified values of the model parameters, initial conditions and boundary conditions. Markup languages such as <a style="color:#580078" href="https://www.cellml.org/">CellML</a>, <a style="color:#580078" href="http://sbml.org/">SBML</a>, <a style="color:#580078" href="https://www.neuroml.org/">NeuroML</a> and <a style="color:#580078" href="http://www.fieldml.org/">FieldML</a> are designed to encode a model in unambiguous form. The markup language <a style="color:#580078" href="http://sed-ml.org/">SED-ML</a> is designed to specify the simulation protocol for running the model with specified inputs and outputs.
 
 A model is **reusable** when it can be used as an independent model or as a module within another model. This requires that the appropriate use of the model is well documented and that its limitations are clear, and that the model is semantically annotated to provide the biological and biophysical meaning of all of its variables and components. One of the goals of the Physiome Project is to encourage modular approaches to modeling to facilitate the reuse of well documented and validated modules.
 
