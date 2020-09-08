@@ -38,6 +38,41 @@
   <i>{{pub.authorlist(article)}}</i>
 </p>
 
+<div style = "text-align: center;">
+    
+    <style>
+        .button {
+            border: 1px solid #580078;
+            background-color: #580078;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 16px;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-bottom: 0;
+            width:12%
+        }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+        </style>
+    <button> <a href="{{article.archiveurl}}" class="button" ><img src="{{SITEURL}}/theme/images/Physiome-under.png"><br><br>View publication</a></button>
+</div>
+
+    <br>
+    
+    {% if article.doi %}
+    <p style="background-color:#E0E0E0;">
+
+    <b>To cite this <i>Physiome</i> article, cite the whole collection at the DOI: <a style="color:#580078" href="https://doi.org/{{article.doi}}">{{article.doi}}</a>, and the Primary Publication at the DOI: <a style="color:#580078" href="{{article.primarypaperurl}}">{{article.primarypaperurl}}</a>.</b> <br>
+    All <i>Physiome</i> articles are published as a collection containing the manuscript as a pdf file and the model implementation as an <a style="color:#580078" href="http://co.mbine.org/standards/omex">omex file</a> (which can be opened with any standard type of zip reader).
+    </p>
+    {% endif %}
+
+<br>
+
 {% if article.primarypaperurl %}
     <b>Primary Publication:</b> <a style="color:#580078" href="{{article.primarypaperurl}}">{{article.primarypapername}}</a>
 {% else %}
@@ -46,14 +81,6 @@
 
 <br>
 <br>
-
-{% if article.doi %}
-<p style="background-color:#E0E0E0;">
-
-All <i>Physiome</i> articles are published as a collection containing the manuscript as a pdf file and the model implementation as an <a style="color:#580078" href="http://co.mbine.org/standards/omex">omex file</a>. <br>
-<b>To cite this <i>Physiome</i> article, cite the whole collection at the DOI: <a style="color:#580078" href="{{article.archiveurl}}">{{article.doi}}</a></b>, and the Primary Publication at the DOI: <a style="color:#580078" href="{{article.primarypaperurl}}">{{article.primarypaperurl}}</a>.
-</p>
-{% endif %}
 
 <p>
 {% if article.abstract %}
@@ -74,6 +101,8 @@ All <i>Physiome</i> articles are published as a collection containing the manusc
   {% else %}
   {% endif %}
 
+<br>
+<br>
 
 {% if article.pdfid %}
 <center>
