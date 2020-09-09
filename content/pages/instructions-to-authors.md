@@ -9,9 +9,9 @@ Please <a style="color:#580078" href = "mailto:physiome@physiomeproject.org">con
 
  <div style = "text-align: center;">
 
-<a <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="https://www.overleaf.com/latex/templates/physiome-journal-article-template/kfbqwxxmtsfv" class="button">*Physiome* Overleaf template</button> </a>
+<a> <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="https://www.overleaf.com/latex/templates/physiome-journal-article-template/kfbqwxxmtsfv" class="button">*Physiome* Overleaf template</button> </a>
 
-<a <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="testing.html" class="button">*Physiome* submission system</button> </a>
+<a> <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="testing.html" class="button">*Physiome* submission system</button> </a>
 
   </div>
 
@@ -67,7 +67,7 @@ Source codes for the model implementation, either as procedural languages (e.g.,
 #### **The following sections should be included in the manuscript:**
 
 *Introduction:* 
-A brief explanation of the biological system modelled. Make sure to define the biological entities present, as well as referencing the data and species used in the primary papers. Clearly reference previously published iterations of the model (to establish provenance), and any data that has been used for validation.
+A brief explanation of the biological system modelled. Make sure to define the biological entities present, as well as referencing the species used in the primary papers. Clearly reference previously published iterations of the model to establish provenance, and any data that has been used for validation.
 
 *Model Description:*
 An overview of the type of model and its structure. As the model code submitted should be complete, all parameter values, units, etc will be included in the files and are not required to be printed in the article. 
@@ -89,11 +89,11 @@ These sections are not required, but may be added before the list of references.
 
  *Figures:*
 <ul>
-<li> **Make sure that the graphs presented in the reproducibility goals in the manuscript are the same as the ones produced by your submitted code.** 
-<li>Use good quality images, do not use screen captions. Recommended image formats are .pdf for plots, graphs, and diagrams, and .jpg for photographic images. Maximum image size is 1MB. <li><a style="color:#580078" href="https://www.overleaf.com/help/336-my-image-files-are-very-large">Here is some help if you have very large images.</a> </li>
-<li>Use a sans serif font for text in the figures (for example Roboto or Open Sans). Make sure that the font size is large enough for the text to be read once the image is inserted in the template (at least 10pt in the final image sizein the manuscript). This includes all numbers and labels on axes. 
-<li>Label subplots in the upper left corner using capital letters, and order the subplots from left to right and top to bottom. Label all axes and specify which units are used. Include a legend if the graph has multiple curves in the same plot. If you want to point out specific features of a graph, use inserts or arrows rather than incomplete representations of the graph. 
- <li><a style="color:#580078" href="https://www.overleaf.com/learn/latex/Inserting_Images">General advice for how to handle images in overleaf can be found here.</a> </li>   
+<li> **Make sure that the graphs presented in the reproducibility goals in the manuscript are the same as the ones produced by your submitted code.** </li>
+<li>Use good quality images, do not use screen captions. Recommended image formats are .pdf for plots, graphs, and diagrams, and .jpg for photographic images. <a style="color:#580078" href="https://www.overleaf.com/learn/latex/Inserting_Images">General advice for how to handle images in overleaf can be found here.</a> Maximum image size is 1MB (<a style="color:#580078" href="https://www.overleaf.com/help/336-my-image-files-are-very-large">here is some help if you have very large images.</a> )</li>
+<li>Use a sans serif font for text in the figures (for example Roboto or Open Sans). Make sure that the font size is large enough for the text to be read once the image is inserted in the template (at least 10pt in the final image sizein the manuscript). This includes all numbers and labels on axes. </li>
+<li>Label subplots in the upper left corner using capital letters, and order the subplots from left to right and top to bottom. Label all axes and specify which units are used. </li>
+<li>Include a legend if the graph has multiple curves in the same plot. If you want to point out specific features of a graph, use inserts or arrows rather than incomplete representations of the graph. </li> 
 </ul>
 
 
@@ -102,7 +102,7 @@ Submissions to *Physiome* can be made through our submission system:
 
  <div style = "text-align: center;">
  
-<a <button type="button" style="background-color: #580078; color:white; border: 1px solid #580078;" href="testing.html" class="button">*Physiome* submission system</button> </a>
+<a> <button type="button" style="background-color: #580078; color:white; border: 1px solid #580078;" href="testing.html" class="button">*Physiome* submission system</button> </a>
 
   </div>
 
@@ -145,7 +145,12 @@ This list details the curators' presence in various popular repositories. If you
 ### 5. Curation
 The *Physiome* curators will check the reproducibility of your model by running the model implementation provided in the submission and compare the results to the primary paper as stated through the reproducibility goals specified in the *Physiome* manuscript. If the model can not reproduce the results, or if there are any other problems with running the files, the curator will contact the submitting author with their concerns. In cases where the model or simulation implementation could be encoded in one of the *Physiome* standards, the curators will help provide the author with information about how this could be done (including direct assistance if resource permits).
 
+*Physiome* articles are published on <a style="color:#580078" href="http://physiome.figshare.com/">figshare</a> as a pdf manuscript containing all the information needed to run the implementation of the model, and an <a style="color:#580078" href="http://co.mbine.org/standards/omex">omex archive</a> containing the model implementation (which can be opened by any type of zip reader).
+
 *Physiome* will collaborate with the <a style="color:#580078" href="http://reproduciblebiomodels.org">Center for Reproducible Biomedical Modeling</a>, to produce a reproducibility report for every *Physiome* article. This report will detail the different aspects of the model’s reproducibility and repeatability and will be attached at the end of the finalized manuscript.
+
+We store only the information you submit to us, which includes your <a style="color:#580078" href="https://orcid.org/">ORCID</a>, your name and email address. Submission data are stored locally on the submission system while we rely on a private <a style="color:#580078" href="https://docs.aws.amazon.com/AmazonS3/latest/gsg/GetStartedWithS3.html">Amazon S3 bucket</a> to store files you submit to us. No payment information will be stored by us, as this is managed through <a style="color:#580078" href="https://stripe.com/">Stripe</a>, our payment provider. Personal information will only be used for attribution of the research work being published.
+
 
 ### 6. Cost
 *Physiome* articles are curated and published as open access with a DOI citable as a journal article, with an author processing charge of US$300. The fee is to be paid after acceptance of the submission, but before publication.
