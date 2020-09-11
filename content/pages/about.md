@@ -3,7 +3,7 @@ Slug: about
        
 About the Journal
 -----------------
-Meet our <a style="color:#580078" href="///editorial-board.html">Editorial Board.</a>
+Meet our <a style="color:#580078" href="editorial-board.html">Editorial Board.</a>
 
 ### Scope
 
