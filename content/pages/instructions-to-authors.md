@@ -4,14 +4,14 @@ Slug: instructions-to-authors
 Instructions to Authors
 -----------------------
 
-The purpose of a *Physiome* article is to provide an open access and citable link between a peer reviewed, published model and its reusable and reproducible implementation. All *Physiome* articles are open access and available on <a style="color:#580078" href="https://physiome.figshare.com/">figshare</a> including the implementation as reported in the article itself. The model files submitted to *Physiome* must fulfil <a style="color:#580078" href="{{SITEURL}}/about.html">the demands of reusability.</a> All submissions to *Physiome* must also be associated with at least one article accepted by a peer-reviewed journal in the field of physiological modelling (referred to as a Primary Publication). Authors are encouraged to prepare their *Physiome* submission(s) in parallel to the Primary Publication. Submissions will be curated and evaluated, but not published until the Primary Publication is accepted. 
+The purpose of a *Physiome* article is to provide an open access and citable link between a peer reviewed, published model and its reusable and reproducible implementation. All *Physiome* articles are open access and available on <a style="color:#580078" href="https://physiome.figshare.com/">figshare</a> including the implementation as reported in the article itself. The model files submitted to *Physiome* must fulfil <a style="color:#580078" href="about.html">the demands of reusability.</a> All submissions to *Physiome* must also be associated with at least one article accepted by a peer-reviewed journal in the field of physiological modelling (referred to as a Primary Publication). Authors are encouraged to prepare their *Physiome* submission(s) in parallel to the Primary Publication. Submissions will be curated and evaluated, but not published until the Primary Publication is accepted. 
 Please <a style="color:#580078" href = "mailto:physiome@physiomeproject.org">contact *Physiome*</a> if you have any queries, and if asking about a specific submission, make sure to include the submission identification number.
 
  <div style = "text-align: center;">
 
-<a> <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="https://www.overleaf.com/latex/templates/physiome-journal-article-template/kfbqwxxmtsfv" class="button">*Physiome* Overleaf template</button> </a>
+<a type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="https://www.overleaf.com/latex/templates/physiome-journal-article-template/kfbqwxxmtsfv" class="button">*Physiome* Overleaf template</a>
 
-<a> <button type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="testing.html" class="button">*Physiome* submission system</button> </a>
+<a type="button" style="vertical-align: middle; text-align: center; background-color: #580078; color:white; border: 1px solid #580078;" href="testing.html" class="button">*Physiome* submission system</a>
 
   </div>
 
